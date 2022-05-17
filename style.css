@@ -1,59 +1,63 @@
+/* 章の番号を自動アサイン */
 body{
     counter-reset: chapter;
-  }
+}
   
-  h1{
-    counter-reset: sub-chapter;
-  }
+h1{
+  counter-reset: sub-chapter;
+}
   
-  h2{
-    counter-reset: section;
-  }
+h2{
+  counter-reset: section;
+}
   
-  h3{
-    counter-reset: sub-section;
-  }
+h3{
+  counter-reset: sub-section;
+}
   
-  h4{
-    counter-reset: sub-sub-section;
-  }
-
-  div.TOC li {
-    list-style: none;
-  }
-  div.TOC ul>li:before {
-      counter-increment : section;
-      content : counters(section, '.') '. ';
-  }
+h4{
+  counter-reset: sub-sub-section;
+}
 
 h1::before{
-    counter-increment: chapter;
-    content: counter(chapter) ". ";
-  }
+  counter-increment: chapter;
+  content: counter(chapter) ". ";
+}
 
-  h2::before{
-    counter-increment: sub-chapter;
-    content: counter(chapter) "." counter(sub-chapter) ". ";
-  }
+h2::before{
+  counter-increment: sub-chapter;
+  content: counter(chapter) "." counter(sub-chapter) ". ";
+}
 
-  h3::before{
-    counter-increment: section;
-    content: counter(chapter) "." counter(sub-chapter) "." counter(section) ". ";    
-  }
+h3::before{
+  counter-increment: section;
+  content: counter(chapter) "." counter(sub-chapter) "." counter(section) ". ";    
+}
 
-  h4::before{
-    counter-increment: sub-section;
-    content: counter(chapter) "." counter(sub-chapter) "." counter(section) "." counter(sub-section) ".";    
-  }
+h4::before{
+  counter-increment: sub-section;
+  content: counter(chapter) "." counter(sub-chapter) "." counter(section) "." counter(sub-section) ".";    
+}
+
+/* 目次の章の番号を自動アサイン */
+div.TOC li {
+  list-style: none;
+}
+
+div.TOC ul>li:before {
+  counter-increment : section;
+  content : counters(section, '.') '. ';
+}
 
 div.TOC ul {
-    counter-reset: section;
-  }
+  counter-reset: section;
+}
   
-    div.TOC li {
-      list-style: none;
-    }
-    div.TOC ul>li:before {
-        counter-increment : section;
-        content : counters(section, '.') '. ';
-    }
+div.TOC li {
+  list-style: none;
+ }
+
+div.TOC ul>li:before {
+  counter-increment : section;
+  content : counters(section, '.') '. ';
+}
