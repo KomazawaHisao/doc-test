@@ -1,0 +1,2737 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Main - My Docs</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">My Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../.." class="nav-link">Welcome to あれれ</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">BEP <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">PrintMgr</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="./" class="dropdown-item active">Main</a>
+</li>
+            
+<li>
+    <a href="../sub/" class="dropdown-item">Sub</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../../.." class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../sub/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#_1" class="nav-link">タスク概要</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#_2" class="nav-link">基本情報</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_3" class="nav-link">機能要件</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_11" class="nav-link">外部領域</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#_13" class="nav-link">静的構造</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#_14" class="nav-link">動的構造</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#_15" class="nav-link">プロセス起動</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_16" class="nav-link">印刷</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_46" class="nav-link">キャンセル</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_47" class="nav-link">ホスト操作</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_50" class="nav-link">リソース制御</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_61" class="nav-link">情報通知</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_63" class="nav-link">エラー</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_70" class="nav-link">バックアップ/リストア</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_72" class="nav-link">プロセス停止</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_73" class="nav-link">個別対応</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p>(Rev:109813)        </p>
+<p><strong>目次</strong></p>
+<div class="TOC">
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=3 orderedList=false} -->
+
+<!-- code_chunk_output -->
+
+- [タスク概要](#タスク概要)
+  - [基本情報](#基本情報)
+  - [機能要件](#機能要件)
+    - [印刷](#印刷)
+    - [キャンセル](#キャンセル)
+    - [ホスト操作](#ホスト操作)
+    - [リソース制御](#リソース制御)
+    - [情報通知](#情報通知)
+    - [エラー](#エラー)
+    - [バックアップ/リストア](#バックアップリストア)
+  - [外部領域](#外部領域)
+    - [保持データ](#保持データ)
+    - [Deviceメディア](#deviceメディア)
+- [静的構造](#静的構造)
+- [動的構造](#動的構造)
+  - [プロセス起動](#プロセス起動)
+  - [印刷](#印刷-1)
+    - [ジョブ印刷開始](#ジョブ印刷開始)
+    - [ページ印刷](#ページ印刷)
+    - [ジョブ印刷終了](#ジョブ印刷終了)
+    - [白紙挿入](#白紙挿入)
+    - [キューフル](#キューフル)
+    - [印刷中のリソース調整](#印刷中のリソース調整)
+    - [パージシート](#パージシート)
+    - [分版印刷](#分版印刷)
+    - [トレイ選択](#トレイ選択)
+    - [排出先選択](#排出先選択)
+    - [物理サムネイル](#物理サムネイル)
+    - [スタック遅延通知](#スタック遅延通知)
+    - [アライメント調整](#アライメント調整)
+    - [カラー判定](#カラー判定)
+      - [ジョブ](#ジョブ)
+      - [ページ](#ページ)
+    - [レポート通知](#レポート通知)
+    - [バナーページ](#バナーページ)
+    - [サンプルページ(ジョブプロパティ)](#サンプルページジョブプロパティ)
+    - [スタティックサンプル](#スタティックサンプル)
+    - [ILSジョブ](#ilsジョブ)
+    - [DMA容量通知](#dma容量通知)
+    - [チェックポイント](#チェックポイント)
+    - [続きから印刷](#続きから印刷)
+    - [割り込み印刷](#割り込み印刷)
+    - [優先印刷](#優先印刷)
+    - [シーケンスチェック](#シーケンスチェック)
+      - [妥当性/順序性](#妥当性順序性)
+      - [印刷コマンド](#印刷コマンド)
+    - [優先処理](#優先処理)
+    - [印刷停止条件](#印刷停止条件)
+  - [キャンセル](#キャンセル-1)
+    - [PPSPからのキャンセル](#ppspからのキャンセル)
+    - [Deviceからのキャンセル](#deviceからのキャンセル)
+  - [ホスト操作](#ホスト操作-1)
+    - [パージ](#パージ)
+    - [ドレイン](#ドレイン)
+  - [リソース制御](#リソース制御-1)
+    - [キャリブレーション通知](#キャリブレーション通知)
+    - [キャリブレーション割り当て](#キャリブレーション割り当て)
+    - [リソース更新](#リソース更新)
+    - [リソースセット更新](#リソースセット更新)
+    - [リソースセット切り替わり](#リソースセット切り替わり)
+    - [カラーリソースの適用](#カラーリソースの適用)
+    - [Deviceメディア(ローカル)](#deviceメディアローカル)
+    - [Deviceメディア(ネット)](#deviceメディアネット)
+    - [DFEメディア](#dfeメディア)
+      - [メディア割り当て](#メディア割り当て)
+      - [メディア更新](#メディア更新)
+    - [ペーパーカタログ](#ペーパーカタログ)
+      - [ID変換](#id変換)
+      - [ペーパーカタログ同期](#ペーパーカタログ同期)
+    - [FIプロファイル](#fiプロファイル)
+  - [情報通知](#情報通知-1)
+    - [Device情報](#device情報)
+    - [PPSP状態](#ppsp状態)
+    - [Device状態変更](#device状態変更)
+    - [サイクルダウン](#サイクルダウン)
+    - [ボード熱情報ロギング【Matt-Bustle/Chamonix2/Stanford限定】](#ボード熱情報ロギングmatt-bustlechamonix2stanford限定)
+  - [エラー](#エラー-1)
+    - [Deviceエラー](#deviceエラー)
+      - [エラー通知](#エラー通知)
+      - [エラー検知](#エラー検知)
+      - [回復可能](#回復可能)
+      - [回復不能](#回復不能)
+    - [パトライト制御](#パトライト制御)
+      - [回復不能](#回復不能-1)
+  - [バックアップ/リストア](#バックアップリストア-1)
+    - [トレイ情報](#トレイ情報)
+    - [Deviceメディア](#deviceメディア-1)
+  - [プロセス停止](#プロセス停止)
+  - [個別対応](#個別対応)
+
+<!-- /code_chunk_output -->
+</div>
+
+<h1 id="_1">タスク概要</h1>
+<h2 id="_2">基本情報</h2>
+<table>
+<thead>
+<tr>
+<th align="left">サブシステム</th>
+<th align="left">名タスク名</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">BEP</td>
+<td align="left">PrintMgr</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th align="left">モジュール名</th>
+<th align="left">フォルダー構成</th>
+<th align="left">備考</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">BepPrintMgrCut.exe</td>
+<td align="left">source/bep.bin/BepPrintMgr</td>
+<td align="left">カット紙系実行モジュール</td>
+</tr>
+<tr>
+<td align="left">BepPMProtPF.dll</td>
+<td align="left">source/bep.lib/PrintMgr</td>
+<td align="left">プラットフォーム向けライブラリ</td>
+</tr>
+<tr>
+<td align="left">BepPMProtXX.dll</td>
+<td align="left">device/common/source/bep.lib/PrintMgr</td>
+<td align="left">機種共通向けライブラリ</td>
+</tr>
+<tr>
+<td align="left">BepPMProdXX.dll</td>
+<td align="left">device/prod-X/source/bep.lib/PrintMgr</td>
+<td align="left">機種向けライブラリ</td>
+</tr>
+</tbody>
+</table>
+<p>★可変点の記載はここ。機種依存の作る口をリストアップ(コンフィグ/IotInfo)。</p>
+<p>Deviceエンジン毎にBepPintMgr実行モジュールは異なるが、インテグ時に、そのDevice向けの実行モジュールをBepPintMgr.exeへシンボリックする。そのため、プラットフォーム部位は、機種ごとに実行モジュールを切り替える必要はない常にBepPintMgr.exeモジュールを制御)。</p>
+<p>BepPrintMgrCut.exeは起動時に、機種依存の定義ファイル(XYZIotInfo)に従い、ロードするライブラリを自動選択し、Deviceエンジンへの接続を行う。</p>
+<h2 id="_3">機能要件</h2>
+<p>接続するDeviceエンジンがカット紙(CDI系)の場合、PrintMgrは、以下の機能を提供する。</p>
+<h3 id="_4">印刷</h3>
+<ul>
+<li>ジョブ/ページ(Tile/Band分割されたラスタライズデータ)をDeviceへ印刷指示する。</li>
+<li>Deviceのページ/シートの処理状況(転写/スタック)を監視し、上位へ通知する。</li>
+<li>ILSジョブの場合は、必要なILS制御を、Deviceへ要求する。</li>
+<li>最終スタックページのサムネイル画像を、上からの要求に応じ、転送する。</li>
+<li>割り込み印刷に必要なDevice制御(一時停止/再開)を行う。</li>
+<li>優先度変更が可能なジョブの順番を通知する。</li>
+<li>Device-DMAの容量を、上位へ通知する。</li>
+</ul>
+<h3 id="_5">キャンセル</h3>
+<ul>
+<li>ジョブの印刷指示を中断する。</li>
+<li>Deviceへ印刷指示済みのジョブは、キャンセルを要求する。</li>
+<li>Device側でジョブがキャンセルされた場合、上位へ通知する。</li>
+</ul>
+<h3 id="_6">ホスト操作</h3>
+<ul>
+<li>ホストジョブの印刷時に使用する特殊な操作に対し、必要な印刷/Device制御を行う。</li>
+</ul>
+<h3 id="_7">リソース制御</h3>
+<ul>
+<li>キャリブレーション通知条件を満たした場合、上位へ通知をする。</li>
+<li>印刷に必要なリソースファイルの制御(ダウンロード/印刷指定)する。</li>
+<li>Device側のメディア設定を上位へ通知する。</li>
+<li>トレイへのリソース割り当てを行う。</li>
+</ul>
+<h3 id="_8">情報通知</h3>
+<ul>
+<li>Device側のエンジン、消耗品の状態に変化があった場合、上位へ通知する。</li>
+<li>モード変更、Device状態に基づき、システム状態/エラー状態/Device状態の遷移を行い、変化があった場合、上位へ通知する。</li>
+</ul>
+<h3 id="_9">エラー</h3>
+<ul>
+<li>Device側でリカバリ事象が発生した場合、上位へ通知する。</li>
+<li>Device側でリカバリが解除された場合、上位へ、リカバリ開始ページを通知し、印刷を再開する。</li>
+</ul>
+<h3 id="_10">バックアップ/リストア</h3>
+<p>★なんかやっているっけ？
+- Deviceメディアファイルのバックアップ/リストアを行う。
+- トレイの割り当て情報のバックアップ/リストアを行う。</p>
+<h2 id="_11">外部領域</h2>
+<p>本タスクは、システム上の/&lt;システムvar/PrintMgrに、ini/def以外の外部ファイルを作成する。現状作成する外部ファイルは、以下のものとなる。</p>
+<h3 id="_12">保持データ</h3>
+<p>★ブラッシュアップ★
+プロセス停止・起動時に復元するためのデータをDISK上に保持する。ファイル名は、「Deviceの機種名_シリアル番号」とする。
+|情報|備考|
+|:---|:---|
+|キャリブレーション情報|キャリブレーション通知に使用|
+|トレイ割り当て情報|トレイに割り当てたキャリブレーション/DFEメディア情報/１組の枚数|
+|Device情報(機種依存)|最期に通知したDevice情報(機種依存)|
+|アライメント情報|DFEのアライメント設定|
+|排出先の上書き設定情報|DFEの排出先設定|</p>
+<h3 id="device">Deviceメディア</h3>
+<p>障害発生時の切り分けに使用するため、最期にアクセスしたメディアファイルを保持する(ログ収集時に回収)。また、DFEへ通知するメディアファイルのテンポラリー領域として使用する。</p>
+<p>DFEへ無駄なDeviceメディア更新を通知しないため、前回通知したDeviceメディアファイルを/&lt;システムtemp&gt;/PrintMgrへ保持する。</p>
+<h1 id="_13">静的構造</h1>
+<p>本節では、関連タスクも含めたシステム構成図を記載する。</p>
+<p>★図★</p>
+<h1 id="_14">動的構造</h1>
+<h2 id="_15">プロセス起動</h2>
+<p>PrintMgrは、プロセス起動時に、Device情報の取得、及び、デバイスドライバAPIのPowerOnシーケンス制御を行う。取得したDevice情報を、PPSP情報通知の形式に変換し上位へ通知する。</p>
+<pre><code class="language-plantuml">@startuml
+participant PrintMgr
+database SaveData
+participant Status
+participant Device
+participant OptionMgr
+participant RscMgr
+database Media
+-&gt;PrintMgr : 起動
+PrintMgr -&gt; SaveData : 読み込み
+SaveData --&gt;&gt; PrintMgr
+PrintMgr -&gt;&gt; Status : 機種固有ステータス情報通知
+PrintMgr -&gt; Device : PowerOnSeq
+Device --&gt; PrintMgr
+PrintMgr -&gt;&gt; OptionMgr : ドングル情報
+OptionMgr -&gt;&gt; RscMgr:ライセンス情報
+RscMgr -&gt;&gt; PrintMgr:初期化完了
+PrintMgr -&gt; RscMgr : Lut読み込み
+RscMgr --&gt;&gt; PrintMgr:
+PrintMgr -&gt; Device : Notify設定
+Device --&gt; PrintMgr
+PrintMgr -&gt; Device : DownloadLut
+Device --&gt;&gt; PrintMgr
+Device -&gt;&gt; PrintMgr : PowerOnSeq完了
+PrintMgr -&gt; Device : デバイス情報取得
+Device --&gt; PrintMgr
+PrintMgr -&gt;&gt; Status : 静的/動的情報通知
+alt Device Media機種
+  PrintMgr -&gt; Media : Meida読み込み
+  Media --&gt;&gt; PrintMgr
+  PrintMgr -&gt; Device : Meida設定
+  Device --&gt; PrintMgr
+  PrintMgr -&gt;&gt; Status : Meida通知
+end
+PrintMgr -&gt;&gt; Status : 初期化完了
+@enduml
+</code></pre>
+<p><strong>注意事項</strong>
+- 「PowerOnSeq完了」は、Deviceの電源がオフの状態では通知されない。</p>
+<h2 id="_16">印刷</h2>
+<h3 id="_17">ジョブ印刷開始</h3>
+<p>PrintMgrは、ジョブの印刷を指示されると、先頭ページの印刷指示を待ち合わせる。</p>
+<p>★ジョブ開始までにどこまでのチェックがしたかったんだっけ？特殊トナー関連だったっけ？</p>
+<pre><code class="language-plantuml">@startuml
+participant JobCnt
+participant PrintMgr
+participant Device
+JobCnt -&gt;&gt; PrintMgr : ジョブの印刷(SOJ)
+PrintMgr -&gt; PrintMgr : 先頭ページを待ち合わせ
+@enduml
+</code></pre>
+<h3 id="_18">ページ印刷</h3>
+<p>PrintMgrは、ページの印刷を指示されると、所定の禁則チェックを行い、Deviceへページ印刷を要求する。また、Deviceでの印刷状況を監視し、上位へページの印刷位置(SSYNC)を通知する。</p>
+<pre><code class="language-plantuml">@startuml
+participant JobCnt
+participant PrintMgr
+participant BufferCnt
+participant Status
+participant Device
+JobCnt -&gt;&gt; PrintMgr : ページの印刷(PPDATA)
+PrintMgr -&gt; PrintMgr : 禁則チェック ★何？
+alt ジョブの先頭ページ
+  PrintMgr -&gt; Device : JobStart
+  Device --&gt; PrintMgr
+end
+PrintMgr -&gt; Device : PageStart
+Device --&gt; PrintMgr
+PrintMgr -&gt; BufferCnt : Bufferページ情報取得(getBandInfo)
+BufferCnt --&gt;&gt; PrintMgr
+PrintMgr -&gt; BufferCnt : Bufferページ読み込み(reference)
+BufferCnt --&gt;&gt; PrintMgr
+PrintMgr -&gt; Device : AddTile
+Device --&gt; PrintMgr
+PrintMgr -&gt; PrintMgr : 禁則チェック ★何？
+PrintMgr -&gt; Device : PageEnd
+Device --&gt; PrintMgr
+PrintMgr -&gt;&gt; JobCnt:SSYNC(IP/OP)
+alt ジョブの先頭ページ
+  PrintMgr -&gt;&gt; JobCnt : ジョブ出力開始通知(OutputStart)
+else ジョブの最終ページ
+  PrintMgr -&gt;&gt; JobCnt : ジョブ出力終了通知(OutputEnd) ★違うかも
+end
+Device -&gt;&gt; PrintMgr : フィード通知
+alt ジョブの先頭ページ
+  PrintMgr -&gt;&gt; JobCnt : ジョブ印刷開始通知(PrintStart)
+alt 前回とトレイ変更 ★だっけ？
+  PrintMgr -&gt;&gt; Status : フィード通知
+end
+Device -&gt;&gt; PrintMgr : 転写完了通知
+PrintMgr -&gt;&gt; JobCnt:SSYNC(TP)
+alt ジョブの先頭ページ
+  PrintMgr -&gt;&gt; JobCnt : ジョブ転写開始通知(TransStart)
+else ジョブの最終ページ
+  PrintMgr -&gt;&gt; JobCnt : ジョブ転写終了通知(TransEnd) ★違うかも
+end
+PrintMgr -&gt; Device : DeletePage
+Device --&gt; PrintMgr
+PrintMgr -&gt;&gt; BufferCnt:DMA解放(notifyRemove)
+Device -&gt;&gt; PrintMgr : カウント通知
+alt レポート最終ページ
+  PrintMgr -&gt;&gt; JobCnt : レポート集計結果通知
+end
+Device -&gt;&gt; PrintMgr : スタック完了通知
+PrintMgr -&gt;&gt; JobCnt:SSYNC(SP)
+@enduml
+</code></pre>
+<p><strong>注意事項</strong>
+- スタック完了通知は、シート単位に通知される。そのため、両面印刷時には、表面裏面を1まとめにした通知がされ、PrintMgrは、2つのページ単位にSSYNC(SP)を上位へ通知する。</p>
+<h3 id="_19">ジョブ印刷終了</h3>
+<p>PrintMgrは、ジョブの終了を指示されると、Deviceへジョブの終了を要求する。</p>
+<pre><code class="language-plantuml">@startuml
+participant JobCnt
+participant PrintMgr
+participant Device
+JobCnt -&gt;&gt; PrintMgr : ジョブの終了(EOJ)
+PrintMgr -&gt; Device : JobEnd
+Device --&gt; PrintMgr
+Device -&gt;&gt; PrintMgr : ジョブ正常終了通知
+PrintMgr -&gt;&gt; JobCnt : ジョブ印刷終了通知(PrintEnd)
+@enduml
+</code></pre>
+<h3 id="_20">白紙挿入</h3>
+<p>PrintMgrは、以下の条件に一致した場合、Deviceへ白紙ページの印刷を要求する。</p>
+<ul>
+<li>両面ジョブ(PrintOptionから判定)の印刷中に片面ページ(ページ属性から判定)の印刷が指示された場合。該当ページの印刷面(ページ属性から判定)が「おもて」の場合は裏面に、「うら」の場合は表面に白紙ページの印刷を挿入(両面と片面の印刷が混在するとDeviceの生産性がダウンするため)。</li>
+</ul>
+<pre><code class="language-plantuml">@startuml
+participant JobCnt
+participant PrintMgr
+participant Device
+JobCnt -&gt;&gt; PrintMgr : ページの印刷(PPDATA)
+alt 両面ジョブ中の片面
+  alt ページが「おもて」
+    PrintMgr -&gt; Device : PageStart(本文)
+    Device --&gt; PrintMgr
+    PrintMgr -&gt; Device : AddTile(本文)
+    Device --&gt; PrintMgr
+    PrintMgr -&gt; Device : PageEnd(本文)
+    Device --&gt; PrintMgr
+    PrintMgr -&gt; Device : PageStart(白紙)
+    Device --&gt; PrintMgr
+    PrintMgr -&gt; Device : PageEnd(白紙)
+    Device --&gt; PrintMgr
+  else ページが「うら」
+    PrintMgr -&gt; Device : PageStart(白紙)
+    Device --&gt; PrintMgr
+    PrintMgr -&gt; Device : PageEnd(白紙)
+    Device --&gt; PrintMgr
+    PrintMgr -&gt; Device : PageStart(本文)
+    Device --&gt; PrintMgr
+    PrintMgr -&gt; Device : AddTile(本文)
+    Device --&gt; PrintMgr
+    PrintMgr -&gt; Device : PageEnd(本文)
+    Device --&gt; PrintMgr
+  end
+end
+@enduml
+</code></pre>
+<ul>
+<li>うら面排出の片面ジョブで、該当ページの印刷面(ページ属性から判定)が「うら」の場合は表面に白紙ページの印刷を挿入(後処理のジョブは常にうらめ排出となるが、その場合でもうら面に片面ジョブを挿入したいジョブ構成があるため)。</li>
+</ul>
+<pre><code class="language-plantuml">@startuml
+participant JobCnt
+participant PrintMgr
+participant Device
+JobCnt -&gt;&gt; PrintMgr : ページの印刷(PPDATA)
+alt うら面排出の片面ジョブ
+  PrintMgr -&gt; Device : PageStart(白紙)
+  Device --&gt; PrintMgr
+  PrintMgr -&gt; Device : PageEnd(白紙)
+  Device --&gt; PrintMgr
+  PrintMgr -&gt; Device : PageStart(本文)
+  Device --&gt; PrintMgr
+  PrintMgr -&gt; Device : AddTile(本文)
+  Device --&gt; PrintMgr
+  PrintMgr -&gt; Device : PageEnd(本文)
+  Device --&gt; PrintMgr
+end
+@enduml
+</code></pre>
+<p><strong>注意事項</strong>
+- 以下の条件を満たす場合は、白紙挿入を抑止する(禁則エラーに落とす)。
+  - 両面印刷できない用紙サイズ、用紙種別
+  - 給紙トレイがインターポーザー</p>
+<h3 id="_21">キューフル</h3>
+<p>PrintMgrは、Deviceへ先だしするシート数(<PageEndしたシート数>-&lt;スタック完了したシート数&gt;)を超えた場合、以降のページ印刷の指示を保留して1秒間隔でリトライする。</p>
+<pre><code class="language-plantuml">@startuml
+participant JobCnt
+participant PrintMgr
+participant Device
+JobCnt -&gt;&gt; PrintMgr : ページの印刷(PPDATA)
+loop (印刷指示したシート数) &gt; (所定シート数)
+  PrintMgr -&gt; PrintMgr : 待機
+  Device -&gt;&gt; PrintMgr : スタック完了通知
+end
+PrintMgr -&gt; Device : PageStart
+Device --&gt; PrintMgr
+PrintMgr -&gt; Device : AddTile
+Device --&gt; PrintMgr
+PrintMgr -&gt; Device : PageEnd
+Device --&gt; PrintMgr
+@enduml
+</code></pre>
+<h3 id="_22">印刷中のリソース調整</h3>
+<p>PrintMgrは、印刷中に処理不可な要求を指示された場合、印刷中のジョブが全て印刷完了してから、要求の処理を行い、処理完了後に、後続のジョブの印刷を再開する。</p>
+<p>★これだけだっけ？リソース管理への応答も明記</p>
+<ul>
+<li>トレイ割り当て(キャリブレーション/メディア)</li>
+<li>リストア</li>
+<li>リソース更新</li>
+</ul>
+<pre><code class="language-plantuml">@startuml
+participant RscMgr
+participant PrintMgr
+participant Device
+RscMgr -&gt; PrintMgr : リソース更新
+loop 印刷中のジョブが存在
+  Device -&gt;&gt; PrintMgr : スタック完了通知
+  Device -&gt;&gt; PrintMgr : ジョブ正常終了
+  note over PrintMgr,Device
+    ・後続ジョブの印刷は待機
+    ・同一リソースに対する操作は最期の指示を保持
+  end note
+end
+PrintMgr -&gt; RscMgr : Lut取得
+RscMgr --&gt; PrintMgr
+PrintMgr -&gt; Device : LutDownload
+Device --&gt; PrintMgr
+PrintMgr -&gt; Device : JobStart
+Device --&gt; PrintMgr
+note over PrintMgr,Device:以降の印刷を再開
+@enduml
+</code></pre>
+<h3 id="_23">パージシート</h3>
+<p>PrintMgrは、１組の枚数の用紙を給紙した場合、ジョブ/部/レコードの切れ目にて、端数のパージシートの排出をDeviceへ要求する。</p>
+<pre><code class="language-plantuml">@startuml
+participant JobCnt
+participant PrintMgr
+participant Device
+JobCnt -&gt;&gt; PrintMgr : ページの印刷(PPDATA)
+alt 部/レコードの切れ目
+  alt １組の枚数のトレイを給紙
+    loop 端数あり
+      PrintMgr -&gt; Device : PageStart(パージ)
+      Device --&gt; PrintMgr
+      PrintMgr -&gt; Device : PageEnd(パージ)
+      Device --&gt; PrintMgr
+    end
+  end
+end
+PrintMgr -&gt; Device : PageStart(本文)
+Device --&gt; PrintMgr
+PrintMgr -&gt; Device : AddTile(本文)
+Device --&gt; PrintMgr
+PrintMgr -&gt; Device : PageEnd(本文)
+Device --&gt; PrintMgr
+@enduml
+</code></pre>
+<pre><code class="language-plantuml">@startuml
+participant JobCnt
+participant PrintMgr
+participant Device
+JobCnt -&gt;&gt; PrintMgr : ジョブの終了(EOJ)
+alt 部/レコードの切れ目
+  alt １組の枚数のトレイを給紙
+    loop 端数あり
+      PrintMgr -&gt; Device : PageStart(パージ)
+      Device --&gt; PrintMgr
+      PrintMgr -&gt; Device : PageEnd(パージ)
+      Device --&gt; PrintMgr
+    end
+  end
+end
+PrintMgr -&gt; Device : JobEnd
+Device --&gt; PrintMgr
+@enduml
+</code></pre>
+<p><strong>注意事項</strong>
+- 用紙挿入のみで使用した順序指定のトレイに関しては、ジョブの切れ目のみでパージシートを排出する。
+- １組の枚数の用紙を給紙したジョブをキャンセルした場合、以降の印刷にて、該当トレイの用紙順序は保証しない。
+- パージシートにて、回復可能エラーが発生した場合、パージシートは、リカバリの対象外とする。
+- ジョブの切れ目のパージシートで、回復可能エラーが発生した場合、該当ジョブは、正常終了とする(Deviceよりジョブ正常終了通知)。</p>
+<h3 id="_24">分版印刷</h3>
+<p>PrintMgrは、ページに対して分版印刷を指示された場合、指示された版単位に、Deviceに対して、モノクロページ印刷を要求する。</p>
+<p>★版の順番</p>
+<pre><code class="language-plantuml">@startuml
+participant JobCnt
+participant PrintMgr
+participant BufferCnt
+participant Status
+participant Device
+JobCnt -&gt;&gt; PrintMgr : ページの印刷(PPDATA)
+PrintMgr -&gt; BufferCnt : Bufferページ情報取得(getBandInfo)
+BufferCnt --&gt;&gt; PrintMgr
+PrintMgr -&gt; BufferCnt : Bufferページ読み込み(reference)
+BufferCnt --&gt;&gt; PrintMgr
+loop 指定された版の数
+  PrintMgr -&gt; Device : PageStart(モノクロ)
+  Device --&gt; PrintMgr
+  PrintMgr -&gt; Device : AddTile(モノクロ)
+  Device --&gt; PrintMgr
+  PrintMgr -&gt; Device : PageEnd(モノクロ)
+  Device --&gt; PrintMgr
+  PrintMgr -&gt;&gt; JobCnt:SSYNC(IP/OP)
+end
+loop 指定された版の数
+  Device -&gt;&gt; PrintMgr : フィード通知
+  Device -&gt;&gt; PrintMgr : 転写完了通知
+  PrintMgr -&gt;&gt; JobCnt:SSYNC(TP)
+  PrintMgr -&gt; Device : DeletePage
+  Device --&gt; PrintMgr
+end
+PrintMgr -&gt;&gt; BufferCnt:DMA解放(notifyRemove)
+loop 指定された版の数
+  Device -&gt;&gt; PrintMgr : スタック完了通知
+  PrintMgr -&gt;&gt; JobCnt:SSYNC(SP)
+end
+@enduml
+</code></pre>
+<p><strong>注意事項</strong>
+- 分版印刷は、必ず、片面印刷とする(上位側より、両面印刷が指定された場合もPrintMgrにて片面印刷へ切り替える)。</p>
+<h3 id="_25">トレイ選択</h3>
+<p>PrintMgrは、トレイ選択ライブラリを使用し、印刷するページの給紙トレイを決定する。</p>
+<pre><code class="language-plantuml">@startuml
+participant JobCnt
+participant PrintMgr
+participant SelectTray
+participant Status
+participant Device
+JobCnt -&gt;&gt; PrintMgr : ページの印刷(PPDATA)
+PrintMgr -&gt; SelectTray : 給紙トレイ取得(selectTray)
+SelectTray --&gt;&gt; PrintMgr
+alt 用紙トレイなし
+  PrintMgr -&gt;&gt; Status : ジョブエラー(タイムアウト)
+  loop 用紙トレイなし
+    Device --&gt;&gt; PrintMgr : Device状態変更通知
+      alt 用紙トレイあり
+        PrintMgr -&gt;&gt; Status : ジョブエラー解除
+      end
+  end
+end
+alt Deviceメディア機種
+  PrintMgr -&gt; Device : PageStart(ストック)
+else
+  PrintMgr -&gt; Device : PageStart(給紙トレイ)
+end
+Device --&gt; PrintMgr
+PrintMgr -&gt; Device : AddTile
+Device --&gt; PrintMgr
+PrintMgr -&gt; Device : PageEnd
+Device --&gt; PrintMgr
+@enduml
+</code></pre>
+<p><strong>注意事項</strong>
+- ジョブエラーがタイムアウトした場合、上位より、ジョブはキャンセルされる。
+- 両面印刷時、裏面ページは、表面のトレイ選択結果を使用する。
+- 給紙トレイで複数のトレイが取得できた場合は、優先度順にDeviceへ給紙を指示する。</p>
+<h3 id="_26">排出先選択</h3>
+<p>PrintMgrは、PrintOptionの排出先指定に基づき、排出先を決定する。排出先の指定が自動選択の場合は、ページの後処理指定、Deviceの構成に基づき、排出先を決定する。</p>
+<p>★tuneDstの内容を書きたい</p>
+<pre><code class="language-plantuml">@startuml
+participant JobCnt
+participant PrintMgr
+participant Device
+JobCnt -&gt;&gt; PrintMgr : ページの印刷(PPDATA)
+PrintMgr -&gt; PrintMgr : 排出先を決定
+alt 排出先の上書き設定
+  PrintMgr -&gt; PrintMgr : 排出先を強制変更
+  PrintMgr -&gt; PrintMgr : 排出先で不可な後処理を無効へ
+end
+@enduml
+</code></pre>
+<h3 id="_27">物理サムネイル</h3>
+<p>PrintMgrは、DIAで作成する物理サムネイルを、メモリ上(プロセス空間)で管理し、上位からの要求に対し、最期にスタックしたページの画像を通知する。</p>
+<pre><code class="language-plantuml">@startuml
+participant UI
+participant PrintMgr
+participant BufferCnt
+participant Device
+Device -&gt;&gt; PrintMgr : フィード通知
+Device -&gt;&gt; PrintMgr : 転写完了通知
+PrintMgr -&gt; PrintMgr: サムネイル画像をローカルメモリへ待避
+PrintMgr -&gt;&gt; BufferCnt:DMA解放(notifyRemove)
+Device -&gt;&gt; PrintMgr : スタック完了通知
+PrintMgr -&gt; PrintMgr: 最終スタックのサムネイル画像を更新
+UI -&gt; PrintMgr: サムネイル画像取得
+PrintMgr --&gt;&gt; UI
+@enduml
+</code></pre>
+<h3 id="_28">スタック遅延通知</h3>
+<p>PrintMgrは、ホチキス、中折りのセット単位のページを印刷した場合、セット最終パージのSSYNC(SP)は、Device側からの「セット完了Notify」が通知を待ってから、上位へ通知する(セット未完成でキャンセルした場合、「続きから印刷」時にセット先頭へ印刷開始位置を戻すため)。</p>
+<pre><code class="language-plantuml">@startuml
+participant JobCnt
+participant PrintMgr
+participant Device
+JobCnt -&gt;&gt; PrintMgr : ページの印刷(PPDATA)
+PrintMgr -&gt; Device : PageStart
+Device --&gt; PrintMgr
+PrintMgr -&gt; Device : AddTile
+Device --&gt; PrintMgr
+PrintMgr -&gt; Device : PageEnd
+Device --&gt; PrintMgr
+PrintMgr -&gt;&gt; JobCnt:SSYNC(IP/OP)
+Device -&gt;&gt; PrintMgr : フィード通知
+Device -&gt;&gt; PrintMgr : 転写完了通知
+PrintMgr -&gt;&gt; JobCnt:SSYNC(TP)
+PrintMgr -&gt; Device : DeletePage
+Device --&gt; PrintMgr
+PrintMgr -&gt;&gt; BufferCnt:DMA解放(notifyRemove)
+Device -&gt;&gt; PrintMgr : カウント通知
+PrintMgr -&gt; PrintMgr : レポート集計に加算
+Device -&gt;&gt; PrintMgr : スタック完了通知
+alt ホチキス/中折り
+  alt セットの終了
+    loop セット完了待ち
+      note over JobCnt,Device
+        ・後続ページの印刷指示は継続する
+        ・後続ページのSSYNC(SP)は全て通知を保留する
+      end note
+      Device -&gt;&gt; PrintMgr : セット完了
+    end
+  end
+  PrintMgr -&gt;&gt; JobCnt:SSYNC(SP)
+  loop スタック保留あり
+    PrintMgr -&gt;&gt; JobCnt:SSYNC(SP)
+  end
+else
+  PrintMgr -&gt;&gt; JobCnt:SSYNC(SP)
+end
+@enduml
+</code></pre>
+<h3 id="_29">アライメント調整</h3>
+<p>PrintMgrは、印刷指示に対し、ラスタライズ時と印刷時で、アライメント調整がズレている場合は、上位へ、ページ再送を通知し、再ラスタライズを促す。</p>
+<pre><code class="language-plantuml">@startuml
+participant JobCnt
+participant PrintMgr
+JobCnt -&gt;&gt; PrintMgr : ページの印刷(PPDATA)
+note over JobCnt,PrintMgr
+  ラスタライズ時のアライメント設定
+end note
+alt アライメント設定が動的情報と不一致
+  PrintMgr -&gt;&gt; JobCnt : ページ再送
+  note over JobCnt,PrintMgr
+    以降の印刷指示は破棄し、ページ再送シーケンス後に印刷を再開
+  end note
+else
+  note over JobCnt,PrintMgr
+    通常の印刷シーケンス
+  end note
+end
+@enduml
+</code></pre>
+<h3 id="_30">カラー判定</h3>
+<p>PrintMgrは、プリントオプション、及び、ラスタライズデータに付与されるタイル情報に基づき、ジョブ、ページのカラーモードを判定する。</p>
+<pre><code class="language-plantuml">@startuml
+participant JobCnt
+participant PageCnt
+participant PageFinisher
+participant BufferCnt
+participant PrintMgr
+participant Device
+JobCnt -&gt;&gt; PrintMgr : ジョブの印刷(SOJ)
+PrintMgr -&gt; PrintMgr : ジョブのカラーモード決定
+PrintMgr -&gt; Device : JobStart
+note over PrintMgr,Device
+  colorMode
+end note
+Device --&gt; PrintMgr
+JobCnt -&gt;&gt; PageCnt : ページのラスタライズ(PPDATA)
+PageCnt -&gt;&gt; PageFinisher : ページのラスタライズ(PPDATA)
+JobCnt -&gt;&gt; PrintMgr : ページの印刷(PPDATA)
+PrintMgr -&gt; Device : PageStart
+Device --&gt; PrintMgr
+PageFinisher -&gt; BufferCnt : ラスタライズデータ書き込み
+BufferCnt --&gt;&gt; PageFinisher
+PrintMgr -&gt; BufferCnt : ラスタライズデータ読み込み
+BufferCnt --&gt;&gt; PrintMgr
+Device --&gt; PrintMgr
+PrintMgr -&gt; Device : AddTile
+Device --&gt; PrintMgr
+PrintMgr -&gt; PrintMgr : ページのカラーモード決定
+PrintMgr -&gt; Device : PageEnd
+note over PrintMgr,Device
+  autoColor
+end note
+Device --&gt; PrintMgr
+Device -&gt;&gt; PrintMgr : カウント通知
+PrintMgr -&gt; PrintMgr: レポート集計に加算
+Device -&gt;&gt; PrintMgr : スタック完了通知
+@enduml
+</code></pre>
+<h4 id="_31">ジョブ</h4>
+<p>ジョブのカラーモードは、以下のプリントオプション、Deviceの特殊トナーの構成に従い判定する。チェックするプリントオプションの中でも、一つでもカラーモード(ColorMode)がカラーの場合は、「カラー4色」と判定し、全てがモノクロの場合は、「モノクロ1色」と判定する。但し、コンポジット分解のプリントオプションは無条件で「モノクロ1色」と判定する。</p>
+<ul>
+<li>親ジョブ/子ジョブ</li>
+<li>論理ウォーターマーク/物理ウォーターマーク</li>
+<li>論理フォーム/物理フォーム</li>
+</ul>
+<p>★特殊トナー+モノクロの判定を追記
+★禁則とかないんだっけ</p>
+<table>
+<thead>
+<tr>
+<th align="center">&gt;</th>
+<th align="center">&gt;</th>
+<th align="center">プリントオプション</th>
+<th align="center">&gt;</th>
+<th align="center">Device構成</th>
+<th align="center">判定</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>カラー</strong></td>
+<td align="center"><strong>最前面</strong></td>
+<td align="center"><strong>最背面</strong></td>
+<td align="center"><strong>特殊トナー1</strong></td>
+<td align="center"><strong>特殊トナー2</strong></td>
+<td align="center"><strong>-</strong></td>
+</tr>
+<tr>
+<td align="center">カラー</td>
+<td align="center">未使用</td>
+<td align="center">未使用</td>
+<td align="center">*</td>
+<td align="center">*</td>
+<td align="center">カラー(4色)</td>
+</tr>
+<tr>
+<td align="center">カラー</td>
+<td align="center">*</td>
+<td align="center">*</td>
+<td align="center">なし</td>
+<td align="center">なし</td>
+<td align="center">カラー(4色)</td>
+</tr>
+<tr>
+<td align="center">カラー</td>
+<td align="center">使用</td>
+<td align="center">使用</td>
+<td align="center">あり</td>
+<td align="center">あり</td>
+<td align="center">カラー(6色)</td>
+</tr>
+<tr>
+<td align="center">カラー</td>
+<td align="center">使用</td>
+<td align="center">未使用</td>
+<td align="center">あり</td>
+<td align="center">*</td>
+<td align="center">カラー+特殊トナー1(5色)</td>
+</tr>
+<tr>
+<td align="center">カラー</td>
+<td align="center">未使用</td>
+<td align="center">使用</td>
+<td align="center">*</td>
+<td align="center">あり</td>
+<td align="center">カラー+特殊トナー2(5色)</td>
+</tr>
+<tr>
+<td align="center">カラー</td>
+<td align="center">使用</td>
+<td align="center">使用</td>
+<td align="center">あり</td>
+<td align="center">なし</td>
+<td align="center">カラー+特殊トナー1(5色)</td>
+</tr>
+<tr>
+<td align="center">カラー</td>
+<td align="center">使用</td>
+<td align="center">使用</td>
+<td align="center">なし</td>
+<td align="center">あり</td>
+<td align="center">カラー+特殊トナー2(5色)</td>
+</tr>
+<tr>
+<td align="center">カラー</td>
+<td align="center">使用</td>
+<td align="center">未使用</td>
+<td align="center">なし</td>
+<td align="center">*</td>
+<td align="center">カラー(4色)</td>
+</tr>
+<tr>
+<td align="center">カラー</td>
+<td align="center">未使用</td>
+<td align="center">使用</td>
+<td align="center">*</td>
+<td align="center">なし</td>
+<td align="center">カラー(4色)</td>
+</tr>
+<tr>
+<td align="center">カラー</td>
+<td align="center">最前面のみ</td>
+<td align="center">*</td>
+<td align="center">*</td>
+<td align="center">*</td>
+<td align="center">特殊トナー1(1色)</td>
+</tr>
+<tr>
+<td align="center">カラー</td>
+<td align="center">*</td>
+<td align="center">最背面のみ</td>
+<td align="center">*</td>
+<td align="center">*</td>
+<td align="center">特殊トナー2(1色)</td>
+</tr>
+<tr>
+<td align="center">モノクロ</td>
+<td align="center">*</td>
+<td align="center">*</td>
+<td align="center">*</td>
+<td align="center">*</td>
+<td align="center">モノクロ(1色)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_32">ページ</h4>
+<p>ページのカラーモード(印刷指示する版)は、ジョブのカラーモードと、ラスタライズデータに付与されれるタイル情報に基づき、判定する。また、ページのカラーモードはDeviceの課金判定に使用される。</p>
+<p>★内容を見直し。分版があるはず。
+★1pに特殊トナー2個あったら、特殊トナーページ2でPMってカウントしているよね？</p>
+<table>
+<thead>
+<tr>
+<th align="center">プリントオプション</th>
+<th align="center">&gt;</th>
+<th align="center">&gt;</th>
+<th align="center">&gt;</th>
+<th align="center">&gt;</th>
+<th align="center">&gt;</th>
+<th align="center">&gt;</th>
+<th align="center">タイル</th>
+<th align="center">&gt;</th>
+<th align="center">&gt;</th>
+<th align="center">&gt;</th>
+<th align="center">&gt;</th>
+<th align="center">&gt;</th>
+<th align="center">判定(autoColor)</th>
+<th align="center">課金</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>カラー</strong></td>
+<td align="center"><strong>カラー(nProperty)</strong></td>
+<td align="center">&gt;</td>
+<td align="center">&gt;</td>
+<td align="center">&gt;</td>
+<td align="center">&gt;</td>
+<td align="center">&gt;</td>
+<td align="center"><strong>版(nColorProperty)</strong></td>
+<td align="center"><strong>Y</strong></td>
+<td align="center"><strong>M</strong></td>
+<td align="center"><strong>C</strong></td>
+<td align="center"><strong>K</strong></td>
+<td align="center"><strong>特1</strong></td>
+<td align="center"><strong>特2</strong></td>
+<td align="center"><strong>-</strong></td>
+</tr>
+<tr>
+<td align="center">^</td>
+<td align="center">^</td>
+<td align="center"><strong>Y</strong></td>
+<td align="center"><strong>M</strong></td>
+<td align="center"><strong>C</strong></td>
+<td align="center"><strong>K</strong></td>
+<td align="center"><strong>特1</strong></td>
+<td align="center"><strong>特2</strong></td>
+<td align="center">^</td>
+<td align="center">^</td>
+<td align="center">^</td>
+<td align="center">^</td>
+<td align="center">^</td>
+<td align="center">^</td>
+<td align="center">^</td>
+</tr>
+<tr>
+<td align="center">*</td>
+<td align="center">白紙</td>
+<td align="center">*</td>
+<td align="center">*</td>
+<td align="center">*</td>
+<td align="center">*</td>
+<td align="center">*</td>
+<td align="center">*</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">白紙(1)</td>
+</tr>
+<tr>
+<td align="center">最前面のみ</td>
+<td align="center">*</td>
+<td align="center">*</td>
+<td align="center">*</td>
+<td align="center">*</td>
+<td align="center">*</td>
+<td align="center">〇</td>
+<td align="center">*</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">〇</td>
+<td align="center">×</td>
+<td align="center">特殊(1)</td>
+</tr>
+<tr>
+<td align="center">^</td>
+<td align="center">*</td>
+<td align="center">*</td>
+<td align="center">*</td>
+<td align="center">*</td>
+<td align="center">*</td>
+<td align="center">×</td>
+<td align="center">*</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">白紙(1)</td>
+</tr>
+<tr>
+<td align="center">最背面のみ</td>
+<td align="center">*</td>
+<td align="center">*</td>
+<td align="center">*</td>
+<td align="center">*</td>
+<td align="center">*</td>
+<td align="center">*</td>
+<td align="center">〇</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">〇</td>
+<td align="center">特殊(1)</td>
+</tr>
+<tr>
+<td align="center">^</td>
+<td align="center">*</td>
+<td align="center">*</td>
+<td align="center">*</td>
+<td align="center">*</td>
+<td align="center">*</td>
+<td align="center">*</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">白紙(1)</td>
+</tr>
+<tr>
+<td align="center">カラー<br>モノクロ</td>
+<td align="center">モノクロ</td>
+<td align="center">*</td>
+<td align="center">*</td>
+<td align="center">*</td>
+<td align="center">〇</td>
+<td align="center">*</td>
+<td align="center">*</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">〇</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">モノクロ(1)</td>
+</tr>
+<tr>
+<td align="center">^</td>
+<td align="center">^</td>
+<td align="center">*</td>
+<td align="center">*</td>
+<td align="center">*</td>
+<td align="center">×</td>
+<td align="center">*</td>
+<td align="center">*</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">白紙(1)</td>
+</tr>
+<tr>
+<td align="center">^</td>
+<td align="center">カラー</td>
+<td align="center">〇</td>
+<td align="center">〇</td>
+<td align="center">〇</td>
+<td align="center">〇</td>
+<td align="center">〇</td>
+<td align="center">〇</td>
+<td align="center">〇</td>
+<td align="center">〇</td>
+<td align="center">〇</td>
+<td align="center">〇</td>
+<td align="center">〇</td>
+<td align="center">〇</td>
+<td align="center">カラー(1)<br>特殊(2)</td>
+</tr>
+<tr>
+<td align="center">^</td>
+<td align="center">^</td>
+<td align="center">〇</td>
+<td align="center">〇</td>
+<td align="center">〇</td>
+<td align="center">〇</td>
+<td align="center">〇</td>
+<td align="center">×</td>
+<td align="center">〇</td>
+<td align="center">〇</td>
+<td align="center">〇</td>
+<td align="center">〇</td>
+<td align="center">〇</td>
+<td align="center">×</td>
+<td align="center">カラー(1)<br>特殊(1)</td>
+</tr>
+<tr>
+<td align="center">^</td>
+<td align="center">^</td>
+<td align="center">〇</td>
+<td align="center">〇</td>
+<td align="center">〇</td>
+<td align="center">〇</td>
+<td align="center">×</td>
+<td align="center">〇</td>
+<td align="center">〇</td>
+<td align="center">〇</td>
+<td align="center">〇</td>
+<td align="center">〇</td>
+<td align="center">×</td>
+<td align="center">〇</td>
+<td align="center">カラー(1)<br>特殊(1)</td>
+</tr>
+<tr>
+<td align="center">^</td>
+<td align="center">^</td>
+<td align="center">〇</td>
+<td align="center">〇</td>
+<td align="center">〇</td>
+<td align="center">〇</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">〇</td>
+<td align="center">〇</td>
+<td align="center">〇</td>
+<td align="center">〇</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">カラー(1)</td>
+</tr>
+<tr>
+<td align="center">^</td>
+<td align="center">^</td>
+<td align="center">〇</td>
+<td align="center">〇</td>
+<td align="center">〇</td>
+<td align="center">×</td>
+<td align="center">〇</td>
+<td align="center">〇</td>
+<td align="center">〇</td>
+<td align="center">〇</td>
+<td align="center">〇</td>
+<td align="center">〇</td>
+<td align="center">〇</td>
+<td align="center">〇</td>
+<td align="center">カラー(1)<br>特殊(2)</td>
+</tr>
+<tr>
+<td align="center">^</td>
+<td align="center">^</td>
+<td align="center">〇</td>
+<td align="center">〇</td>
+<td align="center">〇</td>
+<td align="center">×</td>
+<td align="center">〇</td>
+<td align="center">×</td>
+<td align="center">〇</td>
+<td align="center">〇</td>
+<td align="center">〇</td>
+<td align="center">〇</td>
+<td align="center">〇</td>
+<td align="center">×</td>
+<td align="center">カラー(1)<br>特殊(1)</td>
+</tr>
+<tr>
+<td align="center">^</td>
+<td align="center">^</td>
+<td align="center">〇</td>
+<td align="center">〇</td>
+<td align="center">〇</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">〇</td>
+<td align="center">〇</td>
+<td align="center">〇</td>
+<td align="center">〇</td>
+<td align="center">〇</td>
+<td align="center">×</td>
+<td align="center">〇</td>
+<td align="center">カラー(1)<br>特殊(1)</td>
+</tr>
+<tr>
+<td align="center">^</td>
+<td align="center">^</td>
+<td align="center">〇</td>
+<td align="center">〇</td>
+<td align="center">〇</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">〇</td>
+<td align="center">〇</td>
+<td align="center">〇</td>
+<td align="center">〇</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">カラー(1)</td>
+</tr>
+<tr>
+<td align="center">^</td>
+<td align="center">^</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">〇</td>
+<td align="center">〇</td>
+<td align="center">〇</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">〇</td>
+<td align="center">〇</td>
+<td align="center">〇</td>
+<td align="center">モノクロ(1)<br>特殊(2)</td>
+</tr>
+<tr>
+<td align="center">^</td>
+<td align="center">^</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">〇</td>
+<td align="center">〇</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">〇</td>
+<td align="center">〇</td>
+<td align="center">×</td>
+<td align="center">モノクロ(1)<br>特殊(1)</td>
+</tr>
+<tr>
+<td align="center">^</td>
+<td align="center">^</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">〇</td>
+<td align="center">×</td>
+<td align="center">〇</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">〇</td>
+<td align="center">×</td>
+<td align="center">〇</td>
+<td align="center">モノクロ(1)<br>特殊(1)</td>
+</tr>
+<tr>
+<td align="center">^</td>
+<td align="center">^</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">〇</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">〇</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">モノクロ(1)</td>
+</tr>
+<tr>
+<td align="center">^</td>
+<td align="center">^</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">〇</td>
+<td align="center">〇</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">〇</td>
+<td align="center">〇</td>
+<td align="center">白紙(1)<br>特殊(2)</td>
+</tr>
+<tr>
+<td align="center">^</td>
+<td align="center">^</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">〇</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">〇</td>
+<td align="center">×</td>
+<td align="center">白紙(1)<br>特殊(1)</td>
+</tr>
+<tr>
+<td align="center">^</td>
+<td align="center">^</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">〇</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">〇</td>
+<td align="center">白紙(1)<br>特殊(1)</td>
+</tr>
+<tr>
+<td align="center">^</td>
+<td align="center">^</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">×</td>
+<td align="center">白紙(1)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>注意事項</strong>
+- Device課金とPPSPジョブ履歴の印刷済みページ数のカウント値は一致する。</p>
+<h3 id="_33">レポート通知</h3>
+<p>PrintMgrは、レポートの最終ページをカウントしたタイミングで、上位へ、レポートの集計情報(印刷済みページ数)を通知する。レポートの集計結果はCEPでジョブ単位に管理し、ジョブ履歴の表示に使用する。</p>
+<p>★Appendixの内容をここえ移植
+★上位への通知はスタックのタイミングだっけ？</p>
+<p><strong>注意事項</strong>
+★レポート通知の抑止の対象は</p>
+<ul>
+<li>上位は同一レポートに対し、複数のレポート集計結果を受けた場合、最後の集計結果を保持する。そのため、同一レポートの多重通知を抑止するため、スタティックサンプル時のレポート集計の通知は抑止する。</li>
+<li>ジョブ終了時に未通知のレポート集計情報があった場合は、上位へレポート情報を通知後、ジョブを終了する。</li>
+<li>リカバリ発生時は、リカバリ発生前のレポート集計を保持し、リカバリ開始後、引き続き、集計を継続する。</li>
+</ul>
+<h3 id="_34">バナーページ</h3>
+<p>PrintMgrは、上位の印刷指示にて、印刷するページをバナーページ(定型/カスタム)と判定した場合、以下の特別な制御を行う。</p>
+<ul>
+<li>直前のシートと同一の排出先に排出する</li>
+<li>後処理を無効にする</li>
+<li>セットを切る</li>
+</ul>
+<pre><code class="language-plantuml">@startuml
+participant JobCnt
+participant PrintMgr
+participant Device
+JobCnt -&gt;&gt; PrintMgr : ページの印刷(PPDATA)
+alt バナーページ
+  PrintMgr -&gt; PrintMgr : 排出先決定(前シートと同一の排出先)
+  PrintMgr -&gt; PrintMgr : 後処理無効
+  PrintMgr -&gt; PrintMgr : セット開始有効
+end
+PrintMgr -&gt; Device : PageStart
+Device --&gt; PrintMgr
+PrintMgr -&gt; Device : AddTile
+Device --&gt; PrintMgr
+PrintMgr -&gt; Device : PageEnd
+Device --&gt; PrintMgr
+@enduml
+</code></pre>
+<p><strong>注意事項</strong>
+- バナーページの排出面は、プリントオプションに従う。
+- バナーページの直前のシートをブックレット、フォルダートレイへ排出していた場合は、フィニッシャートップトレイへバナーページを排出する。但し、FFPS互換機の場合は、後処理して、ブックレット、フォルダートレイへ排出する。
+- バナーページがジョブの先頭の場合、排出先はプリントオプションから決定する(★正しい？)。
+- 定型バナーの後処理は無効とする(排出先の決定のため、上位側からは後処理の指定がある)。但し、リカバリ、続きから印刷時には、定型バナーの後処理は無効となるため、データパスの復元情報から排出先を決定する。</p>
+<h3 id="_35">サンプルページ(ジョブプロパティ)</h3>
+<p>PrintMgrは、上位の印刷指示にて、印刷するページをサンプルページ(ジョブプロパティ)と判定した場合、以下の特別な制御を行う。</p>
+<ul>
+<li>Deviceエンジンから最寄のトップトレイに排出する</li>
+<li>後処理を無効にする</li>
+<li>セットを切る</li>
+</ul>
+<pre><code class="language-plantuml">@startuml
+participant JobCnt
+participant PrintMgr
+participant Device
+JobCnt -&gt;&gt; PrintMgr : ページの印刷(PPDATA)
+alt サンプルページ(ジョブプロパティ)
+  PrintMgr -&gt; PrintMgr : 排出先決定(最寄りのトップトレイ)
+  PrintMgr -&gt; PrintMgr : 後処理無効
+  PrintMgr -&gt; PrintMgr : セット開始有効
+end
+PrintMgr -&gt; Device : PageStart
+Device --&gt; PrintMgr
+PrintMgr -&gt; Device : AddTile
+Device --&gt; PrintMgr
+PrintMgr -&gt; Device : PageEnd
+Device --&gt; PrintMgr
+@enduml
+</code></pre>
+<p><strong>注意事項</strong>
+- 排出先のトップトレイが既にジョブで使用済みの場合は、ページの混在を防ぐため、禁則エラーとする。</p>
+<h3 id="_36">スタティックサンプル</h3>
+<p>PrintMgrは、上位からスタティックサンプル指示を受けた場合、自発的にリカバリシーケンスを発生し、後続シート1枚を、最寄りの排出トレイへ排出する。スタティックサンプルの印刷ページは、進捗表示対象外のため、上位へのSSYNCを抑止する。</p>
+<pre><code class="language-plantuml">@startuml
+participant Status
+participant JobCnt
+participant PrintMgr
+participant Device
+Status -&gt;&gt; PrintMgr : スタティックサンプル印刷
+PrintMgr -&gt;&gt; Status : 状態通知(スタティックサンプル中)
+PrintMgr -&gt; Device : IOTResume
+Device --&gt; PrintMgr
+alt Deviceへの印刷指示ページあり
+  Device -&gt;&gt; PrintMgr : リカバリ開始
+  PrintMgr -&gt;&gt; JobCnt : ページ再送要求
+else
+  PrintMgr -&gt;&gt; JobCnt : ページ再送要求
+end
+JobCnt -&gt;&gt; PrintMgr : データリセット(RESET)
+JobCnt -&gt;&gt; PrintMgr : ジョブの開始(SOJ)
+PrintMgr -&gt; Device : JobStart
+Device --&gt; PrintMgr
+alt 1シート分の印刷指示がまだ
+  JobCnt -&gt; PrintMgr : ページの印刷(PPDATA)
+  PrintMgr -&gt; Device : PageStart
+  Device --&gt; PrintMgr
+  PrintMgr -&gt; Device : AddTile
+  Device --&gt; PrintMgr
+  PrintMgr -&gt; Device : PageEnd
+  Device --&gt; PrintMgr
+end
+Device -&gt;&gt; PrintMgr : スタック完了通知
+PrintMgr -&gt; PrintMgr : SSYNC通知抑止
+alt 1シート分の印刷完了
+  PrintMgr -&gt; Device : IOTPause
+  Device --&gt; PrintMgr
+  Device -&gt;&gt; PrintMgr : 回復可能エラー(一時停止中)
+  PrintMgr -&gt;&gt; Status : 状態通知(一時停止中)
+end
+@enduml
+</code></pre>
+<p><strong>注意事項</strong>
+★他にもスタティックサンプル印刷をエラー復帰する条件ってなかったっけ？</p>
+<ul>
+<li>スタティックサンプルは、「一時停止中」、「印刷待ち以降のジョブがある」場合のみ、UIで操作を可能とする。</li>
+<li>スタティックサンプル中に、本文ジョブのスタック完了Notifyが通知された場合は、上位へSSYNCを通知する(FIRM障害により不正印刷が発生した場合に、以降の印刷時に、重複印刷が発生することを防止するため)。</li>
+<li>セット印刷(ホチキス、中とじ、中折り)中にスタティックサンプルは、Deviceへ再開を通知する前に、上位へエラーを通知する(再開を指示すると、その時点で、Device側でセット排出されてしまう)。</li>
+</ul>
+<h3 id="ils">ILSジョブ</h3>
+<p>PrintMgrは、上位からILSジョブの印刷時には、通常の印刷シーケンスに加え、階調補正データ/キャリブレーションデータに関するDevice通信を追加で行う。</p>
+<p>★ここはFWA LIBのシーケンスとマージ</p>
+<p><strong>注意事項</strong>
+- ILSジョブをキャンセルする場合、PrintMgrは、「ILS終了」→「ジョブキャンセル」の順にDeviceへ要求する。</p>
+<h3 id="dma">DMA容量通知</h3>
+<p>PrintMgrは、定期的に、DMA容量を、バッファ制御より取得し、上位に容量情報を通知する。</p>
+<pre><code class="language-plantuml">@startuml
+participant JobCnt
+participant PrintMgr
+participant BufferCnt
+loop
+  PrintMgr -&gt; BufferCnt : DMA容量取得
+  BufferCnt --&gt;&gt; PrintMgr
+  alt 前回通知から10%の位が変化
+    PrintMgr -&gt;&gt; JobCnt : DMA容量通知
+  end
+end
+@enduml
+</code></pre>
+<p>★ページ数の話</p>
+<p><strong>注意事項</strong>
+- Device状態が「印刷中」から「印刷中」以外に遷移した場合は、必ず、DMA容量を上位へ通知する。</p>
+<p>★★★以下の説は印刷の説へマージ★★★</p>
+<h3 id="_37">チェックポイント</h3>
+<p>PrintMgrは、以下のタイミングで、最期にスタックしたジョブをチェックポイントとして、上位へ通知する。</p>
+<ul>
+<li>Deviceエンジンが停止</li>
+<li>Deviceエンジンが停止した状態で、Deviceからスタック完了通知</li>
+<li>ジョブキャンセル応答直前 ※スタックした場合のみ</li>
+</ul>
+<p><strong>注意事項</strong>
+- システムとしては、チェックポイントの通知により、その直前に通知されたスタックの次のページを「続きから印刷」の開始ページとする。</p>
+<h3 id="_38">続きから印刷</h3>
+<p>★上位への通知タイミングは？
+★内容に変更はない？</p>
+<p>上位は、ジョブの印刷開始時に、PrintMgrへ以下の「ジョブ引継ぎ情報」が通知する。PrintMgrは、通知された情報から、前回ジョブ印刷時の情報を復元し、印刷を再開する。</p>
+<table>
+<thead>
+<tr>
+<th align="left">情報</th>
+<th align="left">使用用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">排出先</td>
+<td align="left">サンプル印刷/カスタムバナーの排出先</td>
+</tr>
+<tr>
+<td align="left">排出済み部数</td>
+<td align="left">Device進捗表示</td>
+</tr>
+<tr>
+<td align="left">排出済みシート数</td>
+<td align="left">Device進捗表示</td>
+</tr>
+<tr>
+<td align="left">オフセット有無</td>
+<td align="left">先頭セットのオフセット指定</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="language-plantuml">@startuml
+participant JobCnt
+participant PrintMgr
+participant Device
+Device -&gt;&gt; PrintMgr : ジョブキャンセル終了通知
+PrintMgr -&gt;&gt; JobCnt : ジョブキャンセル終了通知(引継ぎ情報)
+JobCnt -&gt;&gt; PrintMgr : ジョブの印刷開始(引継ぎ情報)
+PrintMgr -&gt; PrintMgr : 前回の印刷情報を復元
+note over JobCnt,Device
+  以降は通常の印刷シーケンス
+end note
+@enduml
+</code></pre>
+<p><strong>注意事項</strong>
+- 上位は、「続きから印刷」時のみ「引継ぎ情報」をPrintMgrへ通知する(それ以外の場合はオール0)。
+- 上位は、ジョブキャンセル終了時にオール0の「引継ぎ情報」を通知された場合、その前に通知された「引継ぎ情報」を保持する。</p>
+<h3 id="_39">割り込み印刷</h3>
+<p>PPSPは、割り込み印刷を以下の3ステップで機能を実現する。</p>
+<ul>
+<li>印刷を一時停止</li>
+<li>処理中のジョブを全てキャンセル</li>
+<li>印刷を再開</li>
+<li>割り込み対象のジョブを印刷</li>
+<li>キャンセルしたジョブを続きから印刷</li>
+</ul>
+<pre><code class="language-plantuml">@startuml
+participant JobCnt
+participant Status
+participant PrintMgr
+participant Device
+Status -&gt; PrintMgr : 割り込み印刷停止
+PrintMgr --&gt;&gt; Status
+PrintMgr -&gt; Device : IOTPause
+Device --&gt;&gt; PrintMgr
+Device -&gt;&gt; PrintMgr : 回復可能エラー(一時停止中)
+PrintMgr -&gt;&gt; Status : 割り込み印刷停止結果
+alt 処理中ジョブあり
+  JobCnt -&gt; PrintMgr : ジョブのキャンセル
+  note over JobCnt,Device
+    以降は通常のジョブのキャンセルシーケンス
+  end note
+  PrintMgr -&gt; JobCnt : ジョブのキャンセル終了通知
+end
+Status -&gt; PrintMgr : 割り込み印刷再開
+PrintMgr --&gt;&gt; Status
+PrintMgr -&gt; Device : IOTResume
+Device --&gt;&gt; PrintMgr
+PrintMgr -&gt;&gt; Status : 割り込み印刷停止結果
+JobCnt -&gt;&gt; PrintMgr : ジョブの印刷開始(割り込みジョブ)
+note over JobCnt,Device
+  通常の印刷シーケンス
+end note
+JobCnt -&gt;&gt; PrintMgr : ジョブの印刷開始(続きからプリント)
+note over JobCnt,Device
+  通常の印刷シーケンス
+end note
+@enduml
+</code></pre>
+<p><strong>注意事項</strong>
+- 印刷中のジョブが順序指定用紙を使用している場合、割り込み印刷停止に対し、NACKを応答する。その場合は、Deviceの印刷を一時停止しない。
+- Device動作の停止時に、Deviceエラーが発生した場合は、割り込み印刷停止結果でNACKを応答し、Deviceへ再開を指示する。</p>
+<h3 id="_40">優先印刷</h3>
+<p>PrintMgrは、上位からのジョブの優先印刷を指示されると、ジョブの印刷状況により、優先変更可能なジョブ順番(Deviceへ印刷指示した最期のジョブの次)を応答し、印刷中のジョブが、全て印刷完了した時点で、上位へ、ページ再送を依頼する。</p>
+<pre><code class="language-plantuml">@startuml
+participant JobCnt
+participant PrintMgr
+participant Device
+JobCnt -&gt;&gt; PrintMgr : 優先印刷
+PrintMgr -&gt; PrintMgr : ジョブ順番作成(印刷したジョブの次に指定ジョブを挿入)
+PrintMgr -&gt;&gt; JobCnt : ジョブ順
+loop ジョブが印刷未完了
+  note over JobCnt,Device
+    ・印刷中のジョブは全ページ印刷指示
+    ・後続ジョブの印刷は抑止
+  end note
+end
+PrintMgr -&gt;&gt; JobCnt : ページ再送(オール0)
+JobCnt -&gt;&gt; PrintMgr : ジョブの印刷開始(優先ジョブ)
+note over JobCnt,Device
+  通常の印刷シーケンス
+end note
+JobCnt -&gt;&gt; PrintMgr : ジョブの印刷開始(後続ジョブ)
+note over JobCnt,Device
+  通常の印刷シーケンス
+end note
+@enduml
+</code></pre>
+<p><strong>注意事項</strong>
+★この応答ってどれ？
+- 回復可能エラーが発生している場合は、上位へNACKを応答する。</p>
+<h3 id="_41">シーケンスチェック</h3>
+<h4 id="_42">妥当性/順序性</h4>
+<p>PrintMgrは、以下の属性の妥当性/順序性をチェックし、異常を検出した場合は、「ページシーケンスエラー(システムダウン)」を上位へ通知し、即時、ログ回収を促す。</p>
+<table>
+<thead>
+<tr>
+<th align="left">&gt;</th>
+<th align="left">属性</th>
+<th align="left">チェック内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">タイル情報</td>
+<td align="left">ジョブ番号</td>
+<td align="left">ページの印刷指示と一致</td>
+</tr>
+<tr>
+<td align="left">^</td>
+<td align="left">ページ番号</td>
+<td align="left">ページの印刷指示と一致</td>
+</tr>
+<tr>
+<td align="left">^</td>
+<td align="left">印刷面</td>
+<td align="left">ページの印刷指示と一致</td>
+</tr>
+<tr>
+<td align="left">^</td>
+<td align="left">バンド番号</td>
+<td align="left">同一ページ内の重複有無</td>
+</tr>
+<tr>
+<td align="left">^</td>
+<td align="left">タイル番号</td>
+<td align="left">同一ページ内の重複有無</td>
+</tr>
+<tr>
+<td align="left">ページの印刷指示</td>
+<td align="left">ページ番号</td>
+<td align="left">直前の印刷指示との大小</td>
+</tr>
+<tr>
+<td align="left">^</td>
+<td align="left">^</td>
+<td align="left">リカバリ開始ページと一致</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_43">印刷コマンド</h4>
+<p>PrintMgrは、上位からの印刷コマンドシーケンスに対し、異常を検出した場合は、「ページシーケンスエラー(システムダウン)」を上位へ通知し、即時、ログ回収を促す。</p>
+<table>
+<thead>
+<tr>
+<th align="left">-</th>
+<th align="left">-</th>
+<th align="left">&gt;</th>
+<th align="left">&gt;</th>
+<th align="left">&gt;</th>
+<th align="left">&gt;</th>
+<th align="left">&gt;</th>
+<th align="left">&gt;</th>
+<th align="left">後続</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>-</strong></td>
+<td align="left"><strong>-</strong></td>
+<td align="left"><strong>SOJ</strong></td>
+<td align="left"><strong>PPDATA(片面)</strong></td>
+<td align="left"><strong>PPDATA(両面-表)</strong></td>
+<td align="left"><strong>PPDATA(両面-裏)</strong></td>
+<td align="left"><strong>EOJ</strong></td>
+<td align="left"><strong>CANCEL</strong></td>
+<td align="left"><strong>RESET</strong></td>
+</tr>
+<tr>
+<td align="left"><strong>先行</strong></td>
+<td align="left"><strong>SOJ</strong></td>
+<td align="left">×</td>
+<td align="left">〇</td>
+<td align="left">〇</td>
+<td align="left">×</td>
+<td align="left">〇</td>
+<td align="left">〇</td>
+<td align="left">〇</td>
+</tr>
+<tr>
+<td align="left">^</td>
+<td align="left"><strong>PPDATA(片面)</strong></td>
+<td align="left">×</td>
+<td align="left">〇</td>
+<td align="left">〇</td>
+<td align="left">×</td>
+<td align="left">〇</td>
+<td align="left">〇</td>
+<td align="left">〇</td>
+</tr>
+<tr>
+<td align="left">^</td>
+<td align="left"><strong>PPDATA(両面-表)</strong></td>
+<td align="left">×</td>
+<td align="left">×</td>
+<td align="left">×</td>
+<td align="left">〇</td>
+<td align="left">×</td>
+<td align="left">〇</td>
+<td align="left">〇</td>
+</tr>
+<tr>
+<td align="left">^</td>
+<td align="left"><strong>PPDATA(両面-裏)</strong></td>
+<td align="left">×</td>
+<td align="left">〇</td>
+<td align="left">〇</td>
+<td align="left">×</td>
+<td align="left">〇</td>
+<td align="left">〇</td>
+<td align="left">〇</td>
+</tr>
+<tr>
+<td align="left">^</td>
+<td align="left"><strong>EOJ</strong></td>
+<td align="left">〇</td>
+<td align="left">×</td>
+<td align="left">×</td>
+<td align="left">×</td>
+<td align="left">×</td>
+<td align="left">〇</td>
+<td align="left">〇</td>
+</tr>
+<tr>
+<td align="left">^</td>
+<td align="left"><strong>CANCEL</strong></td>
+<td align="left">〇</td>
+<td align="left">〇</td>
+<td align="left">〇</td>
+<td align="left">〇</td>
+<td align="left">〇</td>
+<td align="left">〇</td>
+<td align="left">〇</td>
+</tr>
+<tr>
+<td align="left">^</td>
+<td align="left"><strong>RESET</strong></td>
+<td align="left">〇</td>
+<td align="left">×</td>
+<td align="left">×</td>
+<td align="left">×</td>
+<td align="left">〇</td>
+<td align="left">〇</td>
+<td align="left">〇</td>
+</tr>
+</tbody>
+</table>
+<p><strong>注意事項</strong>
+- 直前に受けたSOJと異なるジョブ番号のPPDATA/EOJが通知された場合も、シーケンスエラーとして検出する。</p>
+<h3 id="_44">優先処理</h3>
+<p>PrintMgrは、上位から以下の要求を通知された場合、印刷系の要求よりも優先して処理する。</p>
+<ul>
+<li>ジョブの保留予約</li>
+<li>ジョブのキャンセル</li>
+<li>優先印刷</li>
+<li>一時停止</li>
+<li>再開</li>
+<li>割り込み印刷</li>
+<li>ランプ制御</li>
+<li>リソース変更</li>
+<li>キャリブレーション割り当て</li>
+<li>メディア割り当て</li>
+<li>リストア</li>
+<li>プロセス停止</li>
+</ul>
+<h3 id="_45">印刷停止条件</h3>
+<p>PrintMgrは、以下の事象が発生した場合、解除条件と満たすまで、上位からの印刷指示を保留する。</p>
+<p>★内容を最新へ</p>
+<table>
+<thead>
+<tr>
+<th align="left">事象</th>
+<th align="left">解除条件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">ILS階調補正データ送信</td>
+<td align="left">階調補正データ送信完了<br>ILSジョブキャンセル</td>
+</tr>
+<tr>
+<td align="left">キューフル</td>
+<td align="left">1秒間隔で自動解除</td>
+</tr>
+<tr>
+<td align="left">優先印刷</td>
+<td align="left">印刷中ジョブの印刷完了</td>
+</tr>
+<tr>
+<td align="left">ページ再送</td>
+<td align="left">データリセット</td>
+</tr>
+<tr>
+<td align="left">一時停止</td>
+<td align="left">再開</td>
+</tr>
+<tr>
+<td align="left">回復可能エラー</td>
+<td align="left">データリセット</td>
+</tr>
+<tr>
+<td align="left">用紙トレイなしエラー</td>
+<td align="left">エラー解除<br>ジョブキャンセル</td>
+</tr>
+<tr>
+<td align="left">リソースセット切替</td>
+<td align="left">リソースダウンロード完了</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_46">キャンセル</h2>
+<h3 id="ppsp">PPSPからのキャンセル</h3>
+<p>PrintMgrは、上位からのジョブキャンセルを依頼されると、バッファ制御へブロック解除、および、Deviceへジョブキャンセル要求を行う。バッファ制御ブロック解除、および、Deviceのジョブキャンセルを確認後、上位にジョブキャンセル要求の応答を通知する。</p>
+<p>★保留予約って何か変更しなかったっけ</p>
+<pre><code class="language-plantuml">@startuml
+participant JobCnt
+participant PrintMgr
+participant BufferCnt
+participant Device
+JobCnt -&gt;&gt; PrintMgr : 保留予約(HOLD_RESERVE)
+PrintMgr -&gt; PrintMgr : 何もしない
+PrintMgr -&gt;&gt; JobCnt : 保留予約応答(NOW)
+JobCnt -&gt; PrintMgr : ジョブのキャンセル
+PrintMgr -&gt; Device : ジョブのキャンセル
+Device --&gt; PrintMgr
+loop ジョブキャンセル通知なし &amp; バッファAPI未応答あり
+  alt バッファAPI未応答あり
+    PrintMgr -&gt; BufferCnt : キャンセルブロック(JOB)
+  end
+  alt Deviceジョブのキャンセル完了
+    Device -&gt;&gt; PrintMgr : ジョブキャンセル終了通知
+  end
+end
+PrintMgr -&gt;&gt; JobCnt : ジョブのキャンセル応答
+@enduml
+</code></pre>
+<h3 id="device_1">Deviceからのキャンセル</h3>
+<p>Device側で、ジョブをキャンセルした場合、PrintMgrには、一方的にジョブキャンセル終了が通知される。PrintMgrは、キャンセル要求していないジョブに対し、該当の通知があった場合は、上位へ、「Device側からのジョブキャンセル」を通知し、上位側へ、ジョブのキャンセルを促す。</p>
+<pre><code class="language-plantuml">@startuml
+participant JobCnt
+participant PrintMgr
+participant Device
+Device -&gt;&gt; PrintMgr : ジョブキャンセル終了通知
+alt PrintMgrがジョブキャンセルを要求していない
+  PrintMgr -&gt;&gt; JobCnt : ジョブキャンセル要求(CANCEL_TRIGGER)
+end
+note over JobCnt,Device
+  以降は「PPSPからのキャンセル」と同一のシーケンス
+end note
+@enduml
+</code></pre>
+<h2 id="_47">ホスト操作</h2>
+<h3 id="_48">パージ</h3>
+<p>PrintMgrは、上位よりパージを指示された場合、内部的に、該当ジョブのキャンセル、及び、リセット処理を行う。</p>
+<pre><code class="language-plantuml">@startuml
+participant JobCnt
+participant PrintMgr
+participant Device
+JobCnt -&gt;&gt; PrintMgr : パージ
+PrintMgr -&gt; Device : JobCancel
+Device --&gt;&gt; PrintMgr
+loop 印刷中のジョブがあり
+  Device -&gt;&gt; PrintMgr : ジョブキャンセル終了通知
+  note over JobCnt,Device
+    JonCntへのジョブキャンセル終了は通知しない
+  end note 
+end
+PrintMgr -&gt; PrintMgr : データリセット
+PrintMgr -&gt;&gt; JobCnt : パージ応答
+@enduml
+</code></pre>
+<p><strong>注意事項</strong>
+- パージは、1ジョブ(IPDS)の印刷時にしか通知されない。</p>
+<h3 id="_49">ドレイン</h3>
+<p>PrintMgrは、上位側よりドレインの指示があった場合、その時点で印刷指示した全シートの排出が完了後、セット排出をDeviceへ要求する。</p>
+<pre><code class="language-plantuml">@startuml
+participant JobCnt
+participant PrintMgr
+participant Device
+JobCnt -&gt; PrintMgr : ページの印刷(PPDATA)
+PrintMgr -&gt; Device : PageStart
+Device --&gt; PrintMgr
+PrintMgr -&gt; Device : AddTile
+Device --&gt; PrintMgr
+PrintMgr -&gt; Device : PageEnd
+Device --&gt; PrintMgr
+JobCnt -&gt; PrintMgr : ドレイン
+note over JobCnt,PrintMgr
+  以降の印刷を保留
+end note
+alt 印刷指示したシートがスタック完了していない
+  Device -&gt;&gt; PrintMgr : スタック完了通知
+end
+PrintMgr -&gt; Device : Drain
+Device --&gt; PrintMgr
+note over JobCnt,PrintMgr
+  以降の印刷を再開
+end note
+@enduml
+</code></pre>
+<h2 id="_50">リソース制御</h2>
+<h3 id="_51">キャリブレーション通知</h3>
+<p>PrintMgrにて、キャリブレーション通知の設定を保持し、通知条件に合致した時点で、動的情報を更新する。</p>
+<p>★初期化のタイミングってどうだっけ？
+★通知はいつクリアするんだっけ？</p>
+<pre><code class="language-plantuml">@startuml
+participant JobCnt
+participant Status
+participant PrintMgr
+loop
+  PrintMgr -&gt; PrintMgr : 通知条件をチェック
+  alt 通知条件に合致
+    PrintMgr -&gt;&gt; Status : 動的情報更新(キャリブレーション通知オン)
+  end
+end
+@enduml
+</code></pre>
+<p><strong>注意事項</strong>
+- 動的情報を更新後は、キャリブレーション通知の情報をクリアし、再度、通知条件の監視を行う。複数回、通知条件を満たした場合は、都度、動的情報更新を上位へ通知する。
+- 最終キャリブレーション実施時間は、PrintMgrプロセスの停止、起動時に引き継ぐ、保持データとして管理する。</p>
+<h3 id="_52">キャリブレーション割り当て</h3>
+<p>PrintMgrは、ステータスより、「キャリブレーションの割り当て」を要求された場合、指示されたトレイ情報に該当のキャリブレーション属性を設定し、上位へ、動的情報を通知する。</p>
+<pre><code class="language-plantuml">@startuml
+participant Status
+participant PrintMgr
+database SaveData
+Status -&gt;&gt; PrintMgr : キャリブレーション割り当て
+PrintMgr -&gt; SaveData : 割り当て情報を保持
+SaveData --&gt;&gt; PrintMgr
+PrintMgr -&gt; PrintMgr : トレイ情報を更新
+PrintMgr -&gt;&gt; Status : 動的情報(トレイ)
+@enduml
+</code></pre>
+<p><strong>注意事項</strong>
+- 割り当てたキャリブレーションとトレイの情報は、PrintMgrプロセスの停止、起動時に引き継ぐ、保持データとして管理する。</p>
+<h3 id="_53">リソース更新</h3>
+<p>PrintMgrは、上位からリソース更新(ユーザ調整、濃度調整、キャリブレーション、スクリーン)を依頼されると、DeviceへLUTダウンロード要求を行う。ダウンロード完了を受け、上位へダウンロード要求の応答を通知する。</p>
+<pre><code class="language-plantuml">@startuml
+participant Resource
+participant PrintMgr
+participant Device
+Resource -&gt; PrintMgr : リソース更新
+PrintMgr -&gt; Device : DownloadLut
+Device --&gt;&gt; PrintMgr
+PrintMgr --&gt;&gt; Resource
+@enduml
+</code></pre>
+<p><strong>注意事項</strong>
+- リソース更新(削除)に関しては、DeviceにダウンロードしたLUTは放置する。
+- スクリーンをDeviceへダウンロードする際は、スクリーンUtilライブラリより、内部データを抽出し、Deviceへ受け渡す。</p>
+<h3 id="_54">リソースセット更新</h3>
+<p>PrintMgrは、上位からリソースセット更新を依頼されると、該当リソースセットのリソースをDeviceへダウンロード要求する。ダウンロード完了を受け、上位にダウンロード要求の応答を通知する。</p>
+<pre><code class="language-plantuml">@startuml
+participant Resource
+participant PrintMgr
+participant Device
+loop
+  Resource -&gt; PrintMgr : リソースセット更新
+  loop 全リソースのダウンロード未完了
+    PrintMgr -&gt; Device : DownloadLut
+    Device --&gt;&gt; PrintMgr
+  end
+  PrintMgr --&gt;&gt; Resource
+end
+@enduml
+</code></pre>
+<p><strong>注意事項</strong>
+- リソースセットの削除を依頼された場合、PrintMgrは、デフォルトリソースセットのリソースを、Deviceへダウンロード要求する。</p>
+<h3 id="_55">リソースセット切り替わり</h3>
+<p>PrintMgrは、Deviceへダウンロードしたリソースセットと、印刷するジョブのリソースセットに差異がある場合、現在、印刷中のジョブがすべて完了した時点で、リソースセットのリソースをDeviceへダウンロードし、印刷を再開する。</p>
+<pre><code class="language-plantuml">@startuml
+participant JobCnt
+participant Resource
+participant PrintMgr
+participant Device
+JobCnt -&gt;&gt; PrintMgr : ジョブの印刷開始
+alt ダウンロード済のリソースセットと異なる
+  loop ジョブの印刷中
+    PrintMgr -&gt; PrintMgr : ジョブの印刷完了を待つ
+  end
+  loop 全リソースのダウンロード未完了
+    PrintMgr -&gt; Device : DownloadLut
+    Device --&gt;&gt; PrintMgr
+  end
+end
+note over JobCnt,Device
+  以降は通常の印刷シーケンス
+end note
+@enduml
+</code></pre>
+<h3 id="_56">カラーリソースの適用</h3>
+<p>PrintMgrは、各ページに適用するカラーリソースを以下から判断し、IOTへ適用を指示する。</p>
+<table>
+<thead>
+<tr>
+<th align="left">種別</th>
+<th align="left">適用判断</th>
+<th align="left">対象リソース</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">TRC</td>
+<td align="left">上位からのカラーパス属性</td>
+<td align="left">プリントオプション</td>
+</tr>
+<tr>
+<td align="left">ユーザー調整</td>
+<td align="left">上位からのカラーパス属性<br>ページLIB</td>
+<td align="left">ページLIB</td>
+</tr>
+<tr>
+<td align="left">濃度調整</td>
+<td align="left">上位からのカラーパス属性</td>
+<td align="left">プリントオプション</td>
+</tr>
+<tr>
+<td align="left">キャリブレーション</td>
+<td align="left">上位からのカラーパス属性</td>
+<td align="left">上位からのLUT属性</td>
+</tr>
+<tr>
+<td align="left">明るさ</td>
+<td align="left">上位からのカラーパス属性</td>
+<td align="left">プリントオプション</td>
+</tr>
+<tr>
+<td align="left">スクリーン</td>
+<td align="left">常に適用</td>
+<td align="left">プリントオプション</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="language-plantuml">@startuml
+participant JobCnt
+participant PrintMgr
+participant PrintOption
+participant Device
+JobCnt -&gt;&gt; PrintMgr : ページの印刷
+note over JobCnt,PrintMgr
+  ・カラーパス属性
+  ・カラーLUT属性
+end note
+PrintMgr -&gt; PrintOption : カラーリソースを決定
+PrintOption --&gt;&gt; PrintMgr : カラーリソースを決定
+PrintMgr -&gt; PrintMgr : カラーリソースを決定
+PrintMgr --&gt;&gt; Device : PageStart
+note over PrintMgr,Device
+  ・カラーLUT属性
+end note
+Device --&gt;&gt; PrintMgr
+@enduml
+</code></pre>
+<h3 id="device_2">Deviceメディア(ローカル)</h3>
+<p>DeviceメディアがPPSPと同筐体の構成の場合、PrintMgrは、所定のメディアフォルダーより、メディア一覧/メディアファイルを取得し、上位へ、メディア情報を通知する。PrintMgrは、起動時、及び、Device側より「メディア更新」を通知された場合、メディアの更新処理を行う。</p>
+<pre><code class="language-plantuml">@startuml
+participant Status
+participant PrintMgr
+participant Device
+database Media
+Device -&gt;&gt; PrintMgr : メディア更新
+PrintMgr -&gt; Media : メディア一覧取得
+Media --&gt;&gt; PrintMgr
+loop メディア数
+  PrintMgr -&gt; Media : メディア取得
+  Media --&gt;&gt; PrintMgr
+end
+alt 前回通知から差分あり
+  PrintMgr -&gt;&gt; Status : メディア更新
+end
+@enduml
+</code></pre>
+<p><strong>注意事項</strong>
+- メディアファイルは、他アプリとの同時アクセスを避けるため、PrintMgrの作業フォルダーに複製後、参照/上位通知を行う。
+- Deviceメディアの場合、トレイへのメディア割り当ては、別システムで実施する(PH-UI)
+- 一度、上位へ通知したメディア情報を削除することはしない(プラットフォームのIFが未存在)。</p>
+<h3 id="device_3">Deviceメディア(ネット)</h3>
+<p>DeviceメディアがPPSPと異筐体の構成の場合、PrintMgrは、所定のFTPサイトより、メディア一覧/メディアを取得し、上位へ、メディア情報を通知する。PrintMgrは、起動時、及び、Device側より「メディア更新」を通知された場合、メディアの更新処理を行う。</p>
+<pre><code class="language-plantuml">@startuml
+participant Status
+participant PrintMgr
+participant Device
+database FTPSite
+Device -&gt;&gt; PrintMgr : メディア更新
+PrintMgr -&gt; FTPSite : メディア一覧取得
+FTPSite --&gt;&gt; PrintMgr
+loop メディア数
+  PrintMgr -&gt; FTPSite : メディア取得
+  FTPSite --&gt;&gt; PrintMgr
+end
+alt 前回通知から差分あり
+  PrintMgr -&gt;&gt; Status : メディア更新
+end
+@enduml
+</code></pre>
+<p><strong>注意事項</strong>
+- メディアファイルは、他アプリとの同時アクセスを避けるため、PrintMgrの作業フォルダーに複製後、参照/上位通知を行う。
+- Deviceメディアの場合、トレイへのメディア割り当ては、別システムで実施する(PH-UI)
+- 一度、上位へ通知したメディア情報を削除することはしない(プラットフォームのIFが未存在)。
+- FTPアクセスに失敗した場合、PrintMgr内部にて10秒間隔で、無限リトライする。ジョブを印刷中の場合は、Pauseコマンドで、印刷を一時停止する。</p>
+<h3 id="dfe">DFEメディア</h3>
+<p>DFEメディアの場合、PrintMgrには、上位側より、「メディアの割り当て」「メディアの更新」が要求される。</p>
+<h4 id="_57">メディア割り当て</h4>
+<p>PrintMgrは、上位より「メディアの割り当て」を要求された場合、指示されたトレイ情報に該当のメディア属性を設定し、上位へ、動的情報を通知する。</p>
+<pre><code class="language-plantuml">@startuml
+participant Status
+participant PrintMgr
+database SaveData
+Status -&gt;&gt; PrintMgr : メディア割り当て
+PrintMgr -&gt; SaveData : 割り当て情報を保持
+SaveData --&gt;&gt; PrintMgr
+PrintMgr -&gt; PrintMgr : トレイ情報を更新
+PrintMgr -&gt;&gt; Status : 動的情報(トレイ)
+@enduml
+</code></pre>
+<p><strong>注意事項</strong>
+- 割り当てたメディアとトレイの情報は、PrintMgrプロセスの停止、起動時に引き継ぐ、保持データとして管理する。</p>
+<h4 id="_58">メディア更新</h4>
+<p>★リソース管理とのやり取り追加</p>
+<p>PrintMgrは、上位より、「メディアの更新」を要求された場合、指示されたトレイ情報に該当のメディア属性を設定し、上位へ、動的情報を通知する。</p>
+<pre><code class="language-plantuml">@startuml
+participant Resource
+participant Status
+participant PrintMgr
+database SaveData
+Resource -&gt;&gt; PrintMgr : メディア更新
+PrintMgr -&gt; SaveData : 割り当て情報を保持
+SaveData --&gt;&gt; PrintMgr
+PrintMgr -&gt; PrintMgr : トレイ情報を更新
+PrintMgr -&gt;&gt; Status : 動的情報(トレイ)
+@enduml
+</code></pre>
+<h3 id="_59">ペーパーカタログ</h3>
+<p>★これってPF部は意識していたっけ？意識していなければ機種仕様書へ移動。</p>
+<p>ペーパーカタログの場合、PrintMgrは、以下の役割を担う。</p>
+<ul>
+<li>リソースID/ペーパーカタログIDの変換</li>
+<li>Deviceペーパーカタログの更新/同期</li>
+</ul>
+<h4 id="id">ID変換</h4>
+<p>PrintMgrは、リソース管理のメディアIDと、DeviceのペーパーカタログIDの対をDISK上の保持データにて管理する。</p>
+<p><strong>注意事項</strong>
+- Deviceのペーパーカタログを更新すると、トレイへのペーパーカタログの割り当てが自動解除されてしまうため、用紙属性の変更時のみDeviceへ更新を依頼する(IDやDFE属性の変更時はDeviceへの更新はスキップする)。</p>
+<h4 id="_60">ペーパーカタログ同期</h4>
+<p>PrintMgrは、システム起動時、PowerOnSeq完了時に、ペーパーカタログの同期処理を行う。</p>
+<pre><code class="language-plantuml">@startuml
+participant PrintMgr
+participant Device
+alt メディアなし
+  PrintMgr -&gt; Device : PaperCatalog全削除
+  Device --&gt;&gt; PrintMgr
+else メディアあり/割り当てなし
+  PrintMgr -&gt; Device : PaperCatalog全削除
+  Device --&gt;&gt; PrintMgr
+  loop 全メディア
+    PrintMgr -&gt; Device : PaperCatalog登録
+    Device --&gt;&gt; PrintMgr
+  end
+else メディアあり/割り当てあり
+  alt 割り当てなし
+    PrintMgr -&gt; Device : PaperCatalog登録
+    Device --&gt;&gt; PrintMgr
+  else 割り当てあり
+    alt 用紙属性に差異あり
+      PrintMgr -&gt; Device : PaperCatalog更新
+      Device --&gt;&gt; PrintMgr
+    end
+  end 
+end
+@enduml
+</code></pre>
+<p><strong>注意事項</strong>
+- 各処理に使用するLUTは、「画像」「文字」「塗りとシェーディング」単位に指定ができ、プリントオプションに従い、PrintMgrは、使用するLUTをDeviceへ通知する。</p>
+<h3 id="fi">FIプロファイル</h3>
+<p>FIプロファイル名が、Deviceから取得できない場合、PrintMgrは、所定のFTPサイトより、FIプロファイル一覧を取得し、上位へ通知する情報に対し、FIプロファイル名を補完して通知する。PrintMgrは、Device側より「FIプロファイル更新」を通知された場合、FIプロファイル名の更新処理を行う。</p>
+<p>★補完する情報って何？</p>
+<pre><code class="language-plantuml">@startuml
+participant Status
+participant PrintMgr
+participant Device
+database FTPSite
+Device -&gt;&gt; PrintMgr : FIプロファイル更新
+PrintMgr -&gt; FTPSite : FIプロファイル一覧
+FTPSite --&gt;&gt; PrintMgr
+PrintMgr -&gt; PrintMgr : FIプロファイル情報更新
+PrintMgr -&gt;&gt; Status : 動的情報(FIプロファイル)
+@enduml
+</code></pre>
+<p><strong>注意事項</strong>
+- FTP制御にてエラーが発生した場合、PrintMgr内部にて10秒間隔で、無限リトライする。ジョブを印刷中の場合は、Pauseコマンドで、印刷を一時停止する。</p>
+<h2 id="_61">情報通知</h2>
+<h3 id="device_4">Device情報</h3>
+<p>Device側で情報変化通知があった場合、PrintMgrは、Device状態の詳細を取得し、必要に応じて、上位へ通知を行う。</p>
+<pre><code class="language-plantuml">@startuml
+participant Status
+participant PrintMgr
+participant Device
+Device -&gt;&gt; PrintMgr : Device情報変化通知
+PrintMgr -&gt; Device : Device情報取得
+Device --&gt;&gt; PrintMgr
+PrintMgr -&gt; PrintMgr : 動的情報更新
+alt 動的情報が変化
+  PrintMgr -&gt;&gt; Status : 動的情報(FIプロファイル)
+end
+@enduml
+</code></pre>
+<h3 id="ppsp_1">PPSP状態</h3>
+<p>PrintMgrは、上位から状態変更要求があった場合、PPSPシステムの状態を更新し、上位へ通知する。</p>
+<pre><code class="language-plantuml">@startuml
+participant Status
+participant PrintMgr
+participant Device
+Status -&gt;&gt; PrintMgr : 状態変更要求
+alt Ready→Pause
+  PrintMgr -&gt; Device : IOTPause
+  Device --&gt;&gt; PrintMgr
+else Pause→Ready
+  PrintMgr -&gt; Device : IOTResume
+  Device --&gt;&gt; PrintMgr
+end
+alt システム状態が変化
+  PrintMgr -&gt;&gt; Status : システム状態通知
+end
+@enduml
+</code></pre>
+<p><strong>注意事項</strong>
+- Deviceは、印刷中に、「一時停止」を指示された場合、セットの切れ目で印刷を停止し、一時停止状態に遷移する。</p>
+<h3 id="device_5">Device状態変更</h3>
+<p>PrintMgrは、Deviceから状態変化通知があった場合、PPSPシステムの状態を更新し、上位へ通知する。</p>
+<pre><code class="language-plantuml">@startuml
+participant Status
+participant PrintMgr
+participant Device
+Device -&gt;&gt; PrintMgr : 状態変化通知
+PrintMgr -&gt; Device : 装置状態を取得
+Device --&gt;&gt; PrintMgr
+PrintMgr -&gt; PrintMgr : 装置状態を決定
+alt システム状態が変化
+  PrintMgr -&gt;&gt; Status : システム状態通知
+end
+@enduml
+</code></pre>
+<p>Device状態を起点したシステム状態の決定条件を、以下に記載する。</p>
+<p>★最新版で見直し</p>
+<table>
+<thead>
+<tr>
+<th align="left">Device状態</th>
+<th align="left">&gt;</th>
+<th align="left">システム状態</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>-</strong></td>
+<td align="left"><strong>モード</strong></td>
+<td align="left"><strong>Device状態</strong></td>
+</tr>
+<tr>
+<td align="left">電源オフ</td>
+<td align="left">BLACK</td>
+<td align="left">STAY</td>
+</tr>
+<tr>
+<td align="left">初期化中</td>
+<td align="left">*</td>
+<td align="left">WAIT</td>
+</tr>
+<tr>
+<td align="left">待機中</td>
+<td align="left">*</td>
+<td align="left">STAY</td>
+</tr>
+<tr>
+<td align="left">プリント中</td>
+<td align="left">*</td>
+<td align="left">PRINT</td>
+</tr>
+<tr>
+<td align="left">スリープ中</td>
+<td align="left">*</td>
+<td align="left">SLEEP</td>
+</tr>
+<tr>
+<td align="left">ダイアグ中</td>
+<td align="left">DIAG</td>
+<td align="left">STAY</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_62">サイクルダウン</h3>
+<p>PrintMgrは、Device側が印刷するページがなく、一定期間、状態が「印刷中」のままとなっている場合、サイクルダウンのAPIをコールし、Device状態を「待機中」へ遷移させる。</p>
+<pre><code class="language-plantuml">@startuml
+participant Status
+participant JobCnt
+participant PrintMgr
+participant Device
+JobCnt -&gt; PrintMgr : ページの印刷(PPDATA)
+PrintMgr -&gt; Device : PageStart
+Device --&gt; PrintMgr
+PrintMgr -&gt; Device : AddTile
+Device --&gt; PrintMgr
+PrintMgr -&gt; Device : PageEnd
+Device --&gt; PrintMgr
+Device -&gt;&gt; PrintMgr : 装置状態変更(PRINT)
+PrintMgr -&gt;&gt; Status : 状態通知(PRINT)
+Device -&gt;&gt; PrintMgr : スタック完了通知
+alt 一定期間経過
+  alt Device状態がPRINTのまま
+    PrintMgr -&gt; Device : CycleDown
+    Device --&gt; PrintMgr
+  end
+end
+Device -&gt;&gt; PrintMgr : 装置状態変更(STAY)
+PrintMgr -&gt;&gt; Status : 状態通知(STAY)
+@enduml
+</code></pre>
+<p><strong>注意事項</strong>
+- システムでエラーが発生している際、Device状態がSTAYにならないと、GUI画面上、ステータスバーが赤色表示にならない問題があるため、本機能を追加した。SYS系は、該当の状態に陥った場合、自動でDevice側が「待機中」へ遷移するため、本機能は無効とする。</p>
+<h3 id="matt-bustlechamonix2stanford">ボード熱情報ロギング【Matt-Bustle/Chamonix2/Stanford限定】</h3>
+<p>PrintMgrは、5分間隔で、筐体内のボードの熱情報をロギングする。を表示する。</p>
+<pre><code class="language-plantuml">@startuml
+participant PrintMgr
+participant Device
+database Log
+loop
+  PrintMgr -&gt; Device : ボード熱情報取得
+  Device --&gt;&gt; PrintMgr
+  PrintMgr -&gt; Log : 書き込み
+  Log --&gt;&gt; PrintMgr
+end
+@enduml
+</code></pre>
+<p><strong>注意事項</strong>
+- ロギングした情報は、DIA熱エラーが発生した際の、システムエンジニアがメンテナンスツールを使用して確認する。</p>
+<h2 id="_63">エラー</h2>
+<h3 id="device_6">Deviceエラー</h3>
+<h4 id="_64">エラー通知</h4>
+<p>PrintMgrは、Device側より、動的に、エラーが通知された場合、PPSPエラーへ変換し、上位へ通知する。</p>
+<pre><code class="language-plantuml">@startuml
+participant Status
+participant PrintMgr
+participant Device
+Device -&gt;&gt; PrintMgr : エラー通知
+PrintMgr -&gt; PrintMgr : PPSPエラーへ変換
+PrintMgr -&gt;&gt; Status : エラー通知
+@enduml
+</code></pre>
+<h4 id="_65">エラー検知</h4>
+<p>PrintMgrは、Deviceデバイス情報の取得時に異常を検出した場合、Deviceからのエラー通知の有無に関わらず、上位へ、Deviceエラーを通知する。</p>
+<p>PrintMgrは、以下のDevice属性をチェックし、独自に、Deviceエラー通知を行う。</p>
+<ul>
+<li>スリープ中</li>
+<li>セットアップステータス異常</li>
+<li>トナー/ドラム/トレイ/排出先/トナー回収ボトル 状態異常</li>
+<li>インターロック/ジャム 位置検出</li>
+</ul>
+<pre><code class="language-plantuml">@startuml
+participant Status
+participant PrintMgr
+participant Device
+Device -&gt;&gt; PrintMgr : 状態変化通知
+PrintMgr -&gt; Device : 装置状態を取得
+Device --&gt;&gt; PrintMgr
+PrintMgr -&gt; PrintMgr : エラーをチェック
+alt エラーを検出
+  PrintMgr -&gt;&gt; Status : IOTエラー通知
+end
+@enduml
+</code></pre>
+<h4 id="_66">回復可能</h4>
+<p>ジョブの印刷中に、ユーザーが回避可能なDeviceエラーが発生した場合、回復可能エラーが通知され、リカバリ作業が完了した時点で、リカバリ開始が通知される。PrintMgrは、回復可能エラーを上位へ通知し、リカバリ開始時に、再送開始ページを上位通知し、データパスのページ再送シーケンスを動作させる。</p>
+<p>★セットリカバリのシーケンスをどっかに追記したい</p>
+<pre><code class="language-plantuml">@startuml
+participant JobCnt
+participant Status
+participant PrintMgr
+participant Device
+Device -&gt;&gt; PrintMgr : 回復可能エラー
+PrintMgr -&gt;&gt; Status : ジョブエラー(タイムアウト)
+Device -&gt;&gt; PrintMgr : リカバリ開始
+PrintMgr -&gt;&gt; Status : ジョブエラー解除
+PrintMgr -&gt; PrintMgr : 再開ページを決定
+PrintMgr -&gt;&gt; JobCnt : ページ再送
+JobCnt -&gt;&gt; PrintMgr : データリセット
+PrintMgr -&gt; PrintMgr : 印刷初期化
+JobCnt -&gt;&gt; PrintMgr : ジョブの印刷開始
+note over JobCnt,Device
+  以降は通常の印刷シーケンス
+end note
+@enduml
+</code></pre>
+<p><strong>注意事項</strong>
+- 以下のケースでは、上位側のジョブ不整合が発生しているケースを想定し、ページ数未指定のページ再送を上位へ通知する。
+  - 回復可能エラーのジョブをキャンセルした
+  - 先頭のリカバリジョブが、リカバリ開始通知のジョブが異なる(リカバリジョブのキャンセルにより、Device側のリカバリ情報に不整合が発生した)
+- システム設定(タイムアウト設定)により、回復可能エラー(OPC)のジョブは、上位側より、ジョブキャンセルされる場合がある。
+- 回復可能エラーが発生したジョブが、ILSジョブの場合、回復不能エラーへ読み替える。
+- すれ違いで、回復可能エラーが発生した状態で、Deviceへの要求に対し「★ここはPFではなんだっけ」が復帰する。その場合、PrintMgrは、Deviceへの印刷系要求(ジョブ開始/ページ印刷/ジョブ終了)を保留し、リカバリ開始(ページ再送)の待ち合わせを行う。
+- 回復可能エラーは、エラーレベルをOPCとして、上位へ通知する。
+- ページ不正(オール0)のページ再送に対し、該当ジョブのスタックが全ページ完了している場合は、「ジョブ終了」から、印刷指示が再送される。この場合、PrintMgrは、リカバリ前に通知された「ジョブ開始」を復元し、「ジョブ開始」「ジョブ終了」のシーケンスで、リカバリを指示する。
+- 一時停止時の回復可能エラーは、上位へ通知しない(該当のジョブをキャンセルすると、エラージョブに落ちる問題が発生するため)。</p>
+<h4 id="_67">回復不能</h4>
+<p>ジョブの印刷中に、ユーザーが回避不能なDeviceエラーが発生した場合、Deviceから、回復不能エラーが通知される。PrintMgrは、キャンセル要のジョブエラーを上位へ通知し、上位側より、ジョブのキャンセル制御を促す。</p>
+<pre><code class="language-plantuml">@startuml
+participant JobCnt
+participant Status
+participant PrintMgr
+participant Device
+Device -&gt;&gt; PrintMgr : 回復不能エラー
+PrintMgr -&gt;&gt; Status : ジョブエラー(要キャンセル)
+JobCnt -&gt;&gt; PrintMgr : ジョブのキャンセル
+note over JobCnt,Device
+  以降は通常のジョブキャンセルシーケンス
+end note
+@enduml
+</code></pre>
+<h3 id="_68">パトライト制御</h3>
+<p>PPSPにおいてパトライトは、ステータスへのエラー通知に伴い、エラーリストの定義に応じて点灯/点滅/消灯するよう制御する。PrintMgrは、ステータスからのパトライト制御の通知を受けた場合、Deviceにパトライトの制御を要求する。</p>
+<pre><code class="language-plantuml">@startuml
+participant Status
+participant PrintMgr
+participant Device
+Status -&gt;&gt; PrintMgr : パトライト制御(点灯/点滅/消灯)
+PrintMgr -&gt; Device : パトライト制御(点灯/点滅/消灯)
+Device --&gt;&gt; PrintMgr
+@enduml
+</code></pre>
+<h4 id="_69">回復不能</h4>
+<ul>
+<li>Device電源がオフオンされた場合、Device側のランプ状態が消灯とならないよう、PrintMgrにて、再度、ランプの点滅/点灯指示を行う。</li>
+<li>特殊なパトライト制御を実現するため、UIにエラー表現をせず、パトライト制御用にシステムのエラー通知シーケンスを流す制御も存在する(印刷中ジョブで使用する最後のトレイが残量25%以下になった場合、用紙トレイエンプティ発生時)。</li>
+</ul>
+<h2 id="_70">バックアップ/リストア</h2>
+<p>★PrintMgrと関連しているっけ？PH-UIのバックアップは今誰がやっているんだっけ？
+★特殊トナー向けのキャリブレーションも追加
+★確認してからシーケンス図追加</p>
+<h3 id="_71">トレイ情報</h3>
+<p>PrintMgrは、CepUtilからのバックアップ/リストア要求に基づき、以下のトレイ情報を、バックアップ/リストアする。</p>
+<ul>
+<li>トレイ番号</li>
+<li>割り当てられているキャリブレーション名</li>
+<li>割り当てられているメディアのリソースセット名(DFEメディアのみ)</li>
+<li>割り当てられているメディアのメディアID(DFEメディアのみ)</li>
+<li>割り当てられているメディアのメディア名(DFEメディアのみ)</li>
+</ul>
+<h3 id="device_7">Deviceメディア</h3>
+<p>★これは機種依存か？</p>
+<p>PrintMgrは、上位からのバックアップ/リストア要求に基づき、以下のDeviceメディアファイルを、バックアップ/リストアする。</p>
+<ul>
+<li>\&lt;PH-UIアプリケーションフォルダー>\public</li>
+</ul>
+<p><strong>注意事項</strong>
+- バックアップ対象のフォルダーが無い場合は、空フォルダーをバックアップする(PH-UIは、メディアファイルを作成するまで、PrintMgrが参照するメディアのフォルダーは作成されない)。
+- リストア時、リストア対象のフォルダーはクリアせず、上書きで、ファイルの解凍を行う。</p>
+<h2 id="_72">プロセス停止</h2>
+<p>PrintMgrは、上位システムより、停止要求が通知された場合は、プロセスの後処理を実施して、停止する。印刷中のジョブがある場合は、全ジョブのキャンセルを行い、全ジョブのキャンセル終了Notifyを受けてから、プロセスを停止する。</p>
+<pre><code class="language-plantuml">@startuml
+participant PrintMgr
+participant Device
+-&gt;&gt; PrintMgr : プロセス停止
+loop 印刷中のジョブ
+  alt ジョブキャンセル未実施
+    PrintMgr -&gt; Device : ジョブキャンセル
+    Device --&gt;&gt; PrintMgr
+  end
+  Device -&gt;&gt; PrintMgr : ジョブキャンセル終了通知
+end
+@enduml
+</code></pre>
+<h2 id="_73">個別対応</h2>
+<p>PrintMgrは、BepPrintMgr.defにて、Device制御コンポーネントの内部制御を調整することを可能とする。以下、調整可能なキーワードとなり、旧バージョンのdefに対しては、起動時に、デフォルト値を使用して、自動コンバージョン(新規キーワード追加)をPrintMgrにて行う。</p>
+<p>★最新情報へ</p>
+<table>
+<thead>
+<tr>
+<th align="left">キーワード</th>
+<th align="left">機能概要</th>
+<th align="left">指定値</th>
+<th align="left">デフォルト</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">select_tray_force</td>
+<td align="left">用紙トレイなしエラー時に、給紙が必要な用紙の情報をIOTコンパネに表示する</td>
+<td align="left">true：有効<br>false：無効</td>
+<td align="left">false</td>
+</tr>
+<tr>
+<td align="left">TabPaperSizeCheck</td>
+<td align="left">タブ紙の用紙に対し、サイズの禁則を無効にする</td>
+<td align="left">true：禁則チェックする<br>false：禁則チェックしない</td>
+<td align="left">true</td>
+</tr>
+<tr>
+<td align="left">OffsetCheck</td>
+<td align="left">オフセット機能のサイズ、用紙種別の禁則を無効にする</td>
+<td align="left">true：禁則チェックする<br>false：禁則チェックしない</td>
+<td align="left">true</td>
+</tr>
+<tr>
+<td align="left">StapleRecoveryMode</td>
+<td align="left">平綴じホチキスジョブのリカバリ方法を指定する</td>
+<td align="left">0：シートリカバリ<br>1：セットリカバリ</td>
+<td align="left">0</td>
+</tr>
+<tr>
+<td align="left">StkByNameOnly</td>
+<td align="left">「StkByNameOnly」属性が有効のストックが割り当たっているトレイを、トレイ指定/メディア指定の給紙方法の場合のみ、選択対象とする。</td>
+<td align="left">true：有効<br>false：無効</td>
+<td align="left">false</td>
+</tr>
+<tr>
+<td align="left">IotTriggerModeChange</td>
+<td align="left">Deviceコンパネの一時停止、再開操作と連動し、DFE側の状態を変更する</td>
+<td align="left">true：有効<br>false：無効</td>
+<td align="left">true</td>
+</tr>
+<tr>
+<td align="left">RecoverUnrecoverableErr</td>
+<td align="left">回復不能エラーを、回復可能エラーとして扱うかを指定する</td>
+<td align="left">0：無効&lt;br1：有効</td>
+<td align="left">0</td>
+</tr>
+<tr>
+<td align="left">MergeUserNameToFileName</td>
+<td align="left">ファイル名を、&lt;ユーザー名&gt;/&lt;ファイル名&gt;の文字列で通知し、Deviceコンパネのジョブ名に、ユーザー名を表示する</td>
+<td align="left">true：有効<br>false：無効</td>
+<td align="left">false</td>
+</tr>
+</tbody>
+</table></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

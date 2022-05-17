@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Sub - My Docs</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">My Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../.." class="nav-link">Welcome to あれれ</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">BEP <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">PrintMgr</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../main/" class="dropdown-item">Main</a>
+</li>
+            
+<li>
+    <a href="./" class="dropdown-item active">Sub</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../main/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" class="nav-link disabled">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#_1" class="nav-link">タスク概要</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#_2" class="nav-link">基本情報</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_3" class="nav-link">機能要件</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_10" class="nav-link">静的構造</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_11" class="nav-link">動的構造</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#16cmyk1" class="nav-link">1#6が白トナーのページに対し、CMYKのいずれか１色以上版がある</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><strong>目次</strong></p>
+<div class="TOC">
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
+<!-- code_chunk_output -->
+
+- [タスク概要](#タスク概要)
+  - [基本情報](#基本情報)
+  - [機能要件](#機能要件)
+    - [禁則](#禁則)
+    - [給紙トレイ調整](#給紙トレイ調整)
+    - [転写遅延【SYS系】](#転写遅延sys系)
+    - [レジスト【ProA】](#レジストproa)
+    - [おもて面出力完了](#おもて面出力完了)
+    - [回復不能への読み替え](#回復不能への読み替え)
+    - [DFEメディア属性チェック](#dfeメディア属性チェック)
+    - [DFEメディア属性補完](#dfeメディア属性補完)
+    - [Device状態連動](#device状態連動)
+    - [ボード熱情報ロギング](#ボード熱情報ロギング)
+    - [文字コード変換](#文字コード変換)
+  - [静的構造](#静的構造)
+  - [動的構造](#動的構造)
+    - [転写遅延](#転写遅延)
+    - [禁則](#禁則-1)
+      - [特殊トナー禁則](#特殊トナー禁則)
+
+<!-- /code_chunk_output -->
+</div>
+
+<h1 id="_1">タスク概要</h1>
+<h2 id="_2">基本情報</h2>
+<p>本ドキュメントでは、PrintMgrが起動時に動的リンクする機種固有のLIBに関し、機能仕様を記載する。</p>
+<table>
+<thead>
+<tr>
+<th align="left">モジュール名</th>
+<th align="left">フォルダー構成</th>
+<th align="left">備考</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">BepPMProtXX.dll</td>
+<td align="left">device/common/source/bep.lib/PrintMgr</td>
+<td align="left">機種共通向けライブラリ</td>
+</tr>
+<tr>
+<td align="left">BepPMProdXX.dll</td>
+<td align="left">device/prod-X/source/bep.lib/PrintMgr</td>
+<td align="left">機種向けライブラリ</td>
+</tr>
+</tbody>
+</table>
+<p>以下、各機種の系統を示す。</p>
+<table>
+<thead>
+<tr>
+<th align="center">機種</th>
+<th align="center">&gt;</th>
+<th align="center">&gt;</th>
+<th align="center">&gt;</th>
+<th align="center">&gt;</th>
+<th align="center">系統</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>-</strong></td>
+<td align="center"><strong>DMP</strong></td>
+<td align="center"><strong>SYS</strong></td>
+<td align="center"><strong>CDI</strong></td>
+<td align="center"><strong>NET</strong></td>
+<td align="center"><strong>FFPS</strong></td>
+</tr>
+<tr>
+<td align="center">Phin</td>
+<td align="center">〇</td>
+<td align="center">-</td>
+<td align="center">〇</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr>
+<td align="center">Matt</td>
+<td align="center">〇</td>
+<td align="center">-</td>
+<td align="center">〇</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr>
+<td align="center">Chamonix2/KoOlina</td>
+<td align="center">-</td>
+<td align="center">〇</td>
+<td align="center">〇</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr>
+<td align="center">Stanford/Orca</td>
+<td align="center">〇</td>
+<td align="center">-</td>
+<td align="center">〇</td>
+<td align="center">-</td>
+<td align="center">〇</td>
+</tr>
+<tr>
+<td align="center">Prysm</td>
+<td align="center">〇</td>
+<td align="center">-</td>
+<td align="center">〇</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr>
+<td align="center">Defender</td>
+<td align="center">〇</td>
+<td align="center">-</td>
+<td align="center">〇</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr>
+<td align="center">MattEnhance</td>
+<td align="center">〇</td>
+<td align="center">-</td>
+<td align="center">〇</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr>
+<td align="center">Greif</td>
+<td align="center">〇</td>
+<td align="center">-</td>
+<td align="center">〇</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr>
+<td align="center">Shobu</td>
+<td align="center">〇</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">〇</td>
+<td align="center">-</td>
+</tr>
+<tr>
+<td align="center">ProductA</td>
+<td align="center">-</td>
+<td align="center">〇</td>
+<td align="center">〇</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr>
+<td align="center">Nebuta</td>
+<td align="center">〇</td>
+<td align="center">-</td>
+<td align="center">〇</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_3">機能要件</h2>
+<p>★ヘッダーからの層別強化
+★各Prd.cppから層別強化</p>
+<h3 id="_4">禁則</h3>
+<h3 id="_5">給紙トレイ調整</h3>
+<p>【Chamonix2限定】選択したトレイの最優先のトレイを1つだけIOTへ通知する。</p>
+<h3 id="sys">転写遅延【SYS系】</h3>
+<h3 id="proa">レジスト【ProA】</h3>
+<h3 id="_6">おもて面出力完了</h3>
+<h3 id="_7">回復不能への読み替え</h3>
+<ul>
+<li>【Stanford限定】Stanfordの場合は、IOTからのジョブのキャンセルは、回復不能エラー扱いとする(ユーザーの誤操作を懸念し、エラー表現することで、IOTからキャンセルされたことを明確に表現する)。</li>
+</ul>
+<h3 id="dfe">DFEメディア属性チェック</h3>
+<p>★結構、機種が拡大されたはず
+- 【Stanford限定】割り当てるメディアと、トレイの用紙属性が一致しない場合は、メディア不一致エラーを表現し、トレイ選択の対象から外す通知を上位へ行う。</p>
+<h3 id="dfe_1">DFEメディア属性補完</h3>
+<ul>
+<li>【Stanford限定】DFEメディアに指定された1組の枚数を、トレイ属性に設定し、上位へ通知する。</li>
+</ul>
+<h3 id="device">Device状態連動</h3>
+<h3 id="_8">ボード熱情報ロギング</h3>
+<h3 id="_9">文字コード変換</h3>
+<h2 id="_10">静的構造</h2>
+<h2 id="_11">動的構造</h2>
+<h3 id="_12">転写遅延</h3>
+<p>PrintMgrは、転写完了の最小の用紙サイズを基準とし、以下のページ数の画像データをDMA上に残す(給紙トレイの切り替え時に再度DMA転送するケースあり)。</p>
+<p>★追加対応の内容を追記</p>
+<table>
+<thead>
+<tr>
+<th align="center">用紙長</th>
+<th align="center">DMA保証ページ数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">216.0mm以下</td>
+<td align="center">9</td>
+</tr>
+<tr>
+<td align="center">280.0mm以下</td>
+<td align="center">8</td>
+</tr>
+<tr>
+<td align="center">482.6mm以下</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td align="center">488.0mm以下</td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td align="center">729.0mm以下</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td align="center">上記以上</td>
+<td align="center">2</td>
+</tr>
+</tbody>
+</table>
+<p><strong>注意事項</strong>
+- スタック完了したページは、強制的に、DMA画像を解放する。</p>
+<h3 id="_13">禁則</h3>
+<p>★ここはPFのシーケンスに止める。印刷のシーケンスに記載するのがベター。
+★機種仕様書へ
+★最新の整理</p>
+<p>PrintMgrは、印刷する用紙サイズ、用紙種別、後処理指定、排出先に基づき、排出が可能かどうかの禁則判定を行う。禁則条件は、Device担当者よりインプットされる禁則テーブルに従う。</p>
+<p>禁則表は、独自のマクロを埋め込み、PrintMgr向けのマクロヘッダーを出力し、機械的な取り込みを行う。</p>
+<p>以下、禁則テーブル以外の特殊な禁則条件を記載する。該当の条件に一致した場合、PrintMgrは、該当のジョブを禁則エラーとして、キャンセルする。</p>
+<ul>
+<li>各後処理に1セット辺りの最大用紙枚数を越えた</li>
+<li>指定した後処理の機能(オフセット、ホチキス、パンチ、折り、断裁、紙折り、天地断裁)が、システム上で無効になっている</li>
+<li>A4LEF、11x8.5以外を4ヵ所ホチキスしようとした</li>
+<li>ホチキスの1セット中に、主走査方向が異なるMIXサイズの用紙を排出しようとした</li>
+<li>パンチの1セット中に、主走査方向が異なるMIXサイズの用紙を排出しようとした</li>
+<li>断ちサイズが2mm～20mm外の小口断裁で指定した</li>
+<li>Device側で保持するFIプロファイルの禁則指定を満たさないページを印刷しようとした</li>
+<li>HCSにて、MIX用紙サイズの排出禁止なのに、MIXサイズの用紙を排出しようとした</li>
+<li>HCSにて、タブ用紙の排出禁止なのに、タブ用紙を排出しようとした</li>
+<li>長尺用紙を手差しトレイ以外からフィードしようとした</li>
+<li>インタポーザーから、「HCS1 Top」「HCS2 Top」「HCS1 Stacker」「HCS2Stacker」「Auto」へ排出(D2GFin接続は、禁則としない)</li>
+<li>紙折り「蛇腹折り(4本)」、「蛇腹折り(5本)」が指定され、用紙長が279mm未満、及び、450mmより大きい</li>
+<li>紙折り「カスタム」で、最初の折り位置が用紙端から、45mmより小さい</li>
+<li>紙折り「カスタム」で、最期の折り位置が用紙端から、12mmより小さい</li>
+<li>紙折り「カスタム」で、折り位置の間隔が、25mmより小さい</li>
+<li>紙折り、天地断裁のいずれが指定され、排出先が「FinisherTop」「Booklet Tray」「FI」でない</li>
+<li>紙折り、天地断裁が同時に指定されたページに対し、用紙長が386mmより大きい</li>
+<li>天地断裁のカット量が、6mm～25mmの範囲外</li>
+<li>ホチキス、パンチの組み合わせが、接続されたフィニッシャーに対して、処理不可の組み合わせ</li>
+<li>【Phin限定】非コート紙で、59gsm以下の用紙に対し、折りを指定したページを印刷しようとした</li>
+<li>【Matt限定】用紙サイズ100mmx1480mm以外の用紙種別「はがき」の用紙を排出しようとした</li>
+<li>【Matt限定】長尺用紙で、未サポートの用紙種別の用紙を排出しようとした</li>
+<li>【Matt限定】用紙長660.4mmを超える長尺用紙で、旧筐体で、1200dpiジョブを印刷しようとした</li>
+<li>【Chamonix2限定】UnCollateのジョブを順序指定用紙に印刷しようとした</li>
+<li>【Chamonix2限定】Deviceから通知される排出トレイごとの用紙長上限を超えている</li>
+</ul>
+<h4 id="_14">特殊トナー禁則</h4>
+<p>PrintMgrは、印刷時に、以下の印刷を検出した場合に、ジョブを禁則エラーとして、エラージョブに落とす。</p>
+<ul>
+<li>ジョブの印刷中に、特殊トナーの色が変更された</li>
+<li>[エンボス紙への印刷:ON]だが、#1がクリアトナー以外</li>
+<li>[グロス差を強調する:ON]だが、#1がクリアトナー以外</li>
+<li>[最背面-下塗りする:ON]かつ[裏打ち:OFF]かつ[特殊トナー種別-再背面:指定しない]だが、#6が金/銀/白トナー以外</li>
+<li>ジョブで使う特殊トナーの色が指定されており、装着されているトナーの色と異なる</li>
+<li>ラスタライズ時と印刷時で、トナー色が異なる</li>
+<li>
+<h1 id="16cmyk1">1#6が白トナーのページに対し、CMYKのいずれか１色以上版がある</h1>
+</li>
+</ul></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
