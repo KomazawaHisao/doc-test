@@ -1,0 +1,59 @@
+body{
+    counter-reset: chapter;
+  }
+  
+  h1{
+    counter-reset: sub-chapter;
+  }
+  
+  h2{
+    counter-reset: section;
+  }
+  
+  h3{
+    counter-reset: sub-section;
+  }
+  
+  h4{
+    counter-reset: sub-sub-section;
+  }
+  div.TOC li {
+    list-style: none;
+  }
+  div.TOC ul>li:before {
+      counter-increment : section;
+      content : counters(section, '.') '. ';
+  }
+
+h1::before{
+    counter-increment: chapter;
+    content: counter(chapter) ". ";
+  }
+
+  h2::before{
+    counter-increment: sub-chapter;
+    content: counter(chapter) "." counter(sub-chapter) ". ";
+  }
+
+  h3::before{
+    counter-increment: section;
+    content: counter(chapter) "." counter(sub-chapter) "." counter(section) ". ";    
+  }
+
+  h4::before{
+    counter-increment: sub-section;
+    content: counter(chapter) "." counter(sub-chapter) "." counter(section) "." counter(sub-section) ".";    
+  }
+}
+
+div.TOC ul {
+    counter-reset: section;
+  }
+  
+    div.TOC li {
+      list-style: none;
+    }
+    div.TOC ul>li:before {
+        counter-increment : section;
+        content : counters(section, '.') '. ';
+    }
